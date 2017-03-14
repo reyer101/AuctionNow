@@ -107,7 +107,13 @@
                         <li><a runat="server" href="~/">Home</a></li>
                         <li><a runat="server" href="~/About">About</a></li>
                         <li><a runat="server" href="~/Contact">Contact</a></li>                        
-                        <li><a runat="server" href="~/InventorySheet">Inventory Sheet</a></li>
+                        <li><a runat="server" href="~/Bidding">Bidding</a>
+                            <ul>
+                                <li><a href="~/MakeABid" runat="server">Make A Bid</a></li>
+                                <li><a href="~/AuctionItems" runat="server">Auction Items</a></li>
+                                <li><a href="~/InventorySheet" runat="server">Inventory Sheet</a></li>
+                            </ul>
+                        </li>
                         <li><a runat="server" href="~/Calendar">Calendar</a>
                             
                             <ul>

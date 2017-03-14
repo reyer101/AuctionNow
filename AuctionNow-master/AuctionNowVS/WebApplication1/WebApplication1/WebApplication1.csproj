@@ -170,8 +170,10 @@
     <Content Include="Account\ResetPasswordConfirmation.aspx" />
     <Content Include="Account\TwoFactorAuthenticationSignIn.aspx" />
     <Content Include="Account\VerifyPhoneNumber.aspx" />
+    <Content Include="AuctionItems.aspx" />
     <Content Include="BidderLogin.aspx" />
     <Content Include="BidderRegistration.aspx" />
+    <Content Include="Bidding.aspx" />
     <Content Include="Calendar.aspx" />
     <Content Include="CalendarApril2017.aspx" />
     <Content Include="CalendarAugust2017.aspx" />
@@ -196,6 +198,7 @@
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="InventorySheet.aspx" />
     <Content Include="Login.aspx" />
+    <Content Include="MakeABid.aspx" />
     <Content Include="NonProfitLogin.aspx" />
     <Content Include="NonProfitRegistration.aspx" />
     <Content Include="Registration.aspx" />
@@ -364,6 +367,13 @@
     <Compile Include="App_Start\IdentityConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
+    <Compile Include="AuctionItems.aspx.cs">
+      <DependentUpon>AuctionItems.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AuctionItems.aspx.designer.cs">
+      <DependentUpon>AuctionItems.aspx</DependentUpon>
+    </Compile>
     <Compile Include="BidderLogin.aspx.cs">
       <DependentUpon>BidderLogin.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -377,6 +387,13 @@
     </Compile>
     <Compile Include="BidderRegistration.aspx.designer.cs">
       <DependentUpon>BidderRegistration.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Bidding.aspx.cs">
+      <DependentUpon>Bidding.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Bidding.aspx.designer.cs">
+      <DependentUpon>Bidding.aspx</DependentUpon>
     </Compile>
     <Compile Include="Calendar.aspx.cs">
       <DependentUpon>Calendar.aspx</DependentUpon>
@@ -492,6 +509,13 @@
     </Compile>
     <Compile Include="Login.aspx.designer.cs">
       <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MakeABid.aspx.cs">
+      <DependentUpon>MakeABid.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MakeABid.aspx.designer.cs">
+      <DependentUpon>MakeABid.aspx</DependentUpon>
     </Compile>
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="NonProfitLogin.aspx.cs">
