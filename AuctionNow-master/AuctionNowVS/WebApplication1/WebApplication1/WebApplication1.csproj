@@ -196,6 +196,8 @@
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
     <Content Include="Account\Web.config" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
+    <Content Include="Images\CreditCardLogos.jpg" />
+    <Content Include="Images\PayPalCard.png" />
     <Content Include="InventorySheet.aspx" />
     <Content Include="Login.aspx" />
     <Content Include="MakeABid.aspx" />

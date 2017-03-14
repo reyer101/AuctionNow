@@ -16,6 +16,38 @@
 
 
 
+        .auto-style10 {
+            width: 180px;
+            height: 23px;
+            margin-left: 120px;
+        }
+        .auto-style11 {
+            width: 31px;
+            height: 23px;
+            margin-left: 120px;
+        }
+        .auto-style13 {
+            width: 42px;
+            height: 23px;
+        }
+        .auto-style14 {
+            width: 167px;
+            height: 54px;
+        }
+        .auto-style15 {
+            height: 54px;
+        }
+        .auto-style16 {
+            margin-left: 14px;
+        }
+        .auto-style17 {
+            width: 8px;
+            height: 23px;
+        }
+        
+
+
+
     </style>
     <div class="jumbotron">
         <h1 style="position:absolute; top: 62px; left: 111px; width: 521px; height: 48px; font-family: 'harlow Solid Italic'; font-size: 54px;" id="head1">Bidder Registration</h1>
@@ -101,7 +133,43 @@
                         <asp:TextBox ID="TextBox6" runat="server" Width="259px" Height="24px"></asp:TextBox>
                     </td>
                 </tr>
+                
+                <tr>
+                    <td class="auto-style14">
+                        Credit&nbsp; Card Number:</td>
+                    <td class="auto-style15">
+                        <asp:TextBox ID="TextBox8" runat="server" Width="259px" Height="24px"></asp:TextBox>
+                    </td>
+                </tr>
+                
                 </table>
+            <table>
+                <tr>
+                    <td class="auto-style11">
+                        
+                        <asp:RadioButton runat="server" />
+                        
+                    </td>
+                    <td class="auto-style10">
+
+                        <asp:Image ID="Image1" runat="server" Height="35px" ImageUrl="~/Images/CreditCardLogos.jpg" Width="164px" />
+
+                    </td >
+                    <td class="auto-style17">
+
+                        <asp:RadioButton runat="server" />
+
+                    </td>
+
+                    <td class="auto-style13">
+
+                        <asp:Image ID="Image2" runat="server" CssClass="auto-style16" Height="36px" ImageUrl="~/Images/PayPalCard.png" Width="39px" />
+
+                    </td>
+
+                </tr>
+            </table>
+
             
             
                 
