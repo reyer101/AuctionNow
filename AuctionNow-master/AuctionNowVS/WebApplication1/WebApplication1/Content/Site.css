@@ -25,6 +25,8 @@ input[type="email"],
 input[type="tel"],
 input[type="select"] {
     max-width: 280px;
+    width: 259px;
+    height: 24px;
 }
 
 /* Responsive: Portrait tablets and up */

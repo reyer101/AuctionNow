@@ -10,17 +10,17 @@
         <div style="background-color:lightgray; width:700px" class="col-md-4">
             <h2>Bidder Login</h2>
             <p>
-                //description</p>
+                Click Bidder Login to be directed to the main bidder login page</p>
                 <br />
                 <p><a runat="server" href="~/BidderLogin" class="btn btn-primary btn-lg" style="font-size: larger">Bidder Login &raquo;</a></p>
             <h2>Non Profit Login</h2>
             <p>
-                //description</p>
+                Click Nonprofit Login to be directed to the main nonprofit login page</p>
                 <br />
                 <p><a runat="server" href="~/NonProfitLogin" class="btn btn-primary btn-lg" style="font-size: larger">Non Profit Login &raquo;</a></p>
             <h2>Staff Login</h2>
             <p>
-                //description</p>
+                Click Staff Login to be directed to the main staff login page</p>
                 <br />
                 <p><a runat="server" href="~/StaffLogin" class="btn btn-primary btn-lg" style="font-size: larger">Staff Login &raquo;</a></p>
         </div>
