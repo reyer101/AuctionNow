@@ -48,6 +48,30 @@
 
 
 
+        .auto-style18 {
+            position: relative;
+            min-height: 1px;
+            top: -42px;
+            left: 8px;
+            height: 688px;
+            float: left;
+            width: 560px;
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+        
+
+
+
+        .auto-style19 {
+            position: absolute;
+            left: 127px;
+            top: 640px;
+        }
+        
+
+
+
     </style>
     <div class="jumbotron">
         <h1 style="position:absolute; top: 62px; left: 111px; width: 521px; height: 48px; font-family: 'harlow Solid Italic'; font-size: 54px;" id="head1">Bidder Registration</h1>
@@ -56,7 +80,7 @@
         <p style="position:absolute; top: 140px; left: 108px; width: 864px;"; class="lead">Welcome to AuctionNow&#39;s&nbsp; Bidder Registration Page</p>        
     </div>
      <div class="row">
-        <div style="background-color:lightgray; width:560px" class="col-md-4">
+        <div style="background-color:lightgray; " class="auto-style18">
             <h2>Registration Details
             </h2>
             <p>Fill out the following bidder registration information to be entered into our system</p>
@@ -159,6 +183,16 @@
 
                         <asp:RadioButton runat="server" />
 
+            
+            
+                
+            <a class="auto-style19">
+                <asp:Button ID="Button2" runat="server" Text="Register" Width="302px" />
+
+            </a>
+            
+            
+                
                     </td>
 
                     <td class="auto-style13">
