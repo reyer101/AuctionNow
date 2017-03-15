@@ -204,6 +204,8 @@
     <Content Include="NonProfitLogin.aspx" />
     <Content Include="NonProfitRegistration.aspx" />
     <Content Include="Registration.aspx" />
+    <Content Include="ScheduleAuction.aspx" />
+    <Content Include="Scheduling.aspx" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
@@ -238,6 +240,7 @@
     <Content Include="Global.asax" />
     <Content Include="Site.Master" />
     <Content Include="StaffLogin.aspx" />
+    <Content Include="ViewAuctions.aspx" />
     <Content Include="ViewSwitcher.ascx" />
     <Content Include="Web.config" />
     <Content Include="Bundle.config" />
@@ -542,6 +545,20 @@
     <Compile Include="Registration.aspx.designer.cs">
       <DependentUpon>Registration.aspx</DependentUpon>
     </Compile>
+    <Compile Include="ScheduleAuction.aspx.cs">
+      <DependentUpon>ScheduleAuction.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ScheduleAuction.aspx.designer.cs">
+      <DependentUpon>ScheduleAuction.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Scheduling.aspx.cs">
+      <DependentUpon>Scheduling.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Scheduling.aspx.designer.cs">
+      <DependentUpon>Scheduling.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Site.Master.cs">
       <DependentUpon>Site.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -564,6 +581,13 @@
       <DependentUpon>StaffLogin.aspx</DependentUpon>
     </Compile>
     <Compile Include="Startup.cs" />
+    <Compile Include="ViewAuctions.aspx.cs">
+      <DependentUpon>ViewAuctions.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ViewAuctions.aspx.designer.cs">
+      <DependentUpon>ViewAuctions.aspx</DependentUpon>
+    </Compile>
     <Compile Include="ViewSwitcher.ascx.cs">
       <DependentUpon>ViewSwitcher.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

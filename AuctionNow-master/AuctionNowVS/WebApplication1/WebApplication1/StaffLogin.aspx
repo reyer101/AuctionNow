@@ -7,16 +7,26 @@
 
         .auto-style1 {
             width: 167px;
-            height: 57px;
+            height: 159px;
         }
         .auto-style2 {
-            height: 57px;
+            height: 159px;
         }
-        #Button1{
-            position:absolute;
-            top: 320px;
-            left: 239px;
+       
+     
+        
+
+
+
+        .auto-style3 {
+            width: 167px;
+            height: 128px;
         }
+        .auto-style4 {
+            height: 128px;
+        }
+     
+     
         
 
 
@@ -33,37 +43,58 @@
             <h2>Staff Login Details
             </h2>
             <p>//description of staff login</p>
-            <table style="width: 100%; height: 255px;">
+            <table style="width: 100%; height: 464px;">
                 
                 
                 <tr>
-                    <td class="auto-style1">
+                    <td class="auto-style3">
                         <br />
                         Staff User Name:<br />
                         <br />
                     </td>
-                    <td class="auto-style2">
+                    <td class="auto-style4">
                         <asp:TextBox ID="TextBox5" runat="server" Width="259px" Height="24px"></asp:TextBox>
                     </td>
                 </tr>
-                <tr>
-                    <td style="width: 167px">
+                 <tr>
+                    <td class="auto-style1">
                         <br />
                         Staff Password:<br />
                         <br />
                     </td>
-                    <td>
-                        <asp:TextBox ID="TextBox6" runat="server" Width="259px" Height="24px"></asp:TextBox>
+                    <td class="auto-style2">
+                        <input id="Password1" type="password" />      
+
+                     </td>   
                         
-                    </td>
-                    
+
+                     
                 </tr>
-                </table>         
+                <tr>
+                    <td class="auto-style1">
+                        <br />
+                        <br />
+                    </td>
+                    <td>      
+                        <a style="position:absolute; top: 443px; left: 324px;"><asp:CheckBox ID="CheckBox1" runat="server" Text="Remember Me" ForeColor="Black" /></a>
+                        <a style="position:absolute; top: 440px; left: 201px;"><asp:Button ID="Button1" runat="server" Text="Login" Width="75px" /></a>
+                     </td>   
+                        
+
+                     
+                </tr>
+                
+                </table> 
+                
+                        
             
             
                 
-        </div>
+            
+             
+            </div>
+        
+        
     </div>
-
-
+   
 </asp:Content>
