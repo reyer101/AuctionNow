@@ -30,7 +30,7 @@
         {
             float:left;
             text-align:center;
-            width:120px;
+            width:100px;
             margin:1px;
             
 
@@ -43,26 +43,26 @@
             padding:10px;
             color:lightgray;
             background:inherit;
-            width:130px;
+            width:100px;
             background-color:black;
         }
         #nav ul li a:hover 
         {
             background:#808080;
             
-            width:130px;
+            width:100px;
         }
         #nav ul li ul 
         {
             display:none;
-            width:130px;
+            width:100px;
             background-color:inherit;
             
         }
         #nav ul li:hover ul
         {
             display:block;
-            width:130px;
+            width:100px;
             
         }
 
@@ -153,7 +153,18 @@
                                 <li>
                                     <a href="~/CalendarDecember2017" runat="server">December 2017</a>
                                 </li>
-                            </ul>                         
+                            </ul>
+                            <li><a runat="server" href="~/Scheduling">Scheduling</a>
+                            <ul>
+                                <li>
+                                    <a href="~/ScheduleAuction" runat="server">Schedule an Auction</a>
+                                </li>
+                                <li>
+                                    <a href="~/ViewAuctions" runat="server">View your Auctions</a>
+                                </li>
+
+                            </ul>                       
+                        </li>                         
                         <li><a runat="server" href="~/Registration">Registration</a>
                             <ul>
                                 <li>
