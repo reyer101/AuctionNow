@@ -53,7 +53,7 @@
             min-height: 1px;
             top: -42px;
             left: 8px;
-            height: 688px;
+            height: 746px;
             float: left;
             width: 560px;
             padding-left: 15px;
@@ -65,8 +65,8 @@
 
         .auto-style19 {
             position: absolute;
-            left: 127px;
-            top: 640px;
+            left: 133px;
+            top: 770px;
         }
         
 
@@ -160,9 +160,23 @@
                 
                 <tr>
                     <td class="auto-style14">
-                        Credit&nbsp; Card Number:</td>
+                        Credit&nbsp;Card Number:</td>
                     <td class="auto-style15">
                         <asp:TextBox ID="TextBox8" runat="server" Width="259px" Height="24px"></asp:TextBox>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="auto-style14">
+                        CVC:</td>
+                    <td class="auto-style15">
+                        <asp:TextBox ID="TextBox9" runat="server" Width="259px" Height="24px"></asp:TextBox>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="auto-style14">
+                        Expiration Date:</td>
+                    <td class="auto-style15">
+                        <asp:TextBox ID="TextBox10" runat="server" Width="259px" Height="24px"></asp:TextBox>
                     </td>
                 </tr>
                 
