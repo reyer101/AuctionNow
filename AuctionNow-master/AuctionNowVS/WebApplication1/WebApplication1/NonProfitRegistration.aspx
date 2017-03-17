@@ -103,14 +103,18 @@
                     </td>
                 </tr>
                 <tr>
-                    <td style="width: 167px">
+                    <td class="auto-style1">
                         <br />
                         Nonprofit Password:<br />
                         <br />
                     </td>
-                    <td>
-                        <asp:TextBox ID="TextBox6" runat="server" Width="259px" Height="24px"></asp:TextBox>
-                    </td>
+                    <td class="auto-style2">
+                        <input id="Password1" type="password" />      
+
+                     </td>   
+                        
+
+                     
                 </tr>
                 </table>
             
