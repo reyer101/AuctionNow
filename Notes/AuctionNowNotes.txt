@@ -1,0 +1,16 @@
+Bidding Tab ideas:
+
+Auction invenory sheet consists of a form for non profits to enter information about each auction item.
+
+Auction inventory sheet:
+
+
+It includes things like the Auction name to which this item is attached, item name, quantity of the item that will be bid for as a single unit, starting bid price, donor, selling price, condition, and any additional comments. The form also has a place for indicating approximate size, and storage location, so that we can find the item
+
+
+Flow:
+
+List of Auctions > List of Auction Items > Auction item detail page
+
+Initial list of auctions should be accessable from Bidding tab (Maybe a drop down option called "Auctions" under bidding). Auction items page should also be accessable from the calendar when a user clicks the auction.
+
