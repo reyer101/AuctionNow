@@ -172,7 +172,10 @@
                                 </li>
                                 <li>
                                     <a href="~/NonProfitRegistration" runat="server">Non Profit Registration</a>
-                                </li>
+                                </li> 
+                                 <li>
+                                    <a href="~/AuctionRegistrationForm" runat="server">Auction Registration Form</a>
+                                </li>                             
 
                             </ul>                       
                         </li>
