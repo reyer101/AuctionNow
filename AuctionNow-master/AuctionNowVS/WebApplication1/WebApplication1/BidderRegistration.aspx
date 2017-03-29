@@ -154,8 +154,7 @@
                         <br />
                     </td>
                     <td class="auto-style2">
-                        <input id="Password1" type="password" />      
-
+                        <asp:TextBox ID="TextBoxPassword" TextMode="Password" runat="server" />
                      </td>      
 
                      
@@ -204,7 +203,7 @@
             
                 
             <a class="auto-style19">
-                <asp:Button ID="Button2" runat="server" Text="Register" Width="302px" />
+                <asp:Button ID="Button2" runat="server" Text="Register" Width="302px" OnClick="Button2_Click" />
 
             </a>
             
