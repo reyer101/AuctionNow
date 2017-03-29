@@ -156,8 +156,7 @@
                     <td class="auto-style2">
                         <input id="Password1" type="password" />      
 
-                     </td>   
-                        
+                     </td>      
 
                      
                 </tr>
