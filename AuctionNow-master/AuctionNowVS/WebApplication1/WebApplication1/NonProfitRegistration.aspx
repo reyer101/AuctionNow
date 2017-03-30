@@ -122,7 +122,7 @@
                 
                 
             <a class="auto-style3">
-                <asp:Button ID="Button2" runat="server" Text="Register" Width="302px" OnClick="Button2_Click" />
+                <asp:Button ID="Button234" runat="server" Text="Register" Width="302px" OnClick="Button234_Click" />
 
             </a>
             

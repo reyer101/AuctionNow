@@ -4,7 +4,9 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using System.Xml.Linq;
 using System.Data.SqlClient;
+using System.Configuration;
 
 namespace WebApplication1
 {
@@ -19,17 +21,16 @@ namespace WebApplication1
             connection.Open();
         }
 
-        protected void Button2_Click(object sender, EventArgs e)
+        protected void Button234_Click(object sender, EventArgs e)
         {
-            SqlCommand cmd = new SqlCommand("insert into NonProftRegistration" + "(Name,,Email,Phone,Address,Username,Password)values(@Name,@Email,@Phone,@Address,@Username,@Password)", connection);
+            SqlCommand cmd = new SqlCommand("insert into NonProfitRegistration" + "(Name,Email,Phone,Address,Username,Password)values(@Name,@Email,@Phone,@Address,@Username,@Password)", connection);
             cmd.Parameters.AddWithValue("@Name", TextBox1.Text);
             cmd.Parameters.AddWithValue("@Email",TextBox2.Text);
             cmd.Parameters.AddWithValue("@Phone", TextBox3.Text);
             cmd.Parameters.AddWithValue("@Address", TextBox4.Text);
             cmd.Parameters.AddWithValue("@Username", TextBox5.Text);
             cmd.Parameters.AddWithValue("@Password", TextBoxPassword.Text);
-  
-            cmd.ExecuteNonQuery();
+           cmd.ExecuteNonQuery();
         }
     }
 }
