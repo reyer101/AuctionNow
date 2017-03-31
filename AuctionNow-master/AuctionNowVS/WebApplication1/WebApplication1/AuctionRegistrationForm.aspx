@@ -6,14 +6,13 @@
         
         <p style="position:absolute; top: 140px; left: 108px; width: 864px;"; class="lead">Welcome to AuctionNow&#39;s&nbsp; Auction Registration Page        
     </div>
-    <div class="row">
-        <div style="background-color:lightgray; width: 500px;" class="auto-style18">
+        <div style="background-color:lightgray; width: 500px; padding-top: 7px; padding-left: 13px;" class="auto-style18">
             <h2>Auction Details
             </h2>
             <p>Fill out the following auction registraion informtaion to be entered into our system</p>
             <table>
                 <tr>
-                    <td style="width: 140px">
+                    <td style="width: 140px">                        
                         <br />
                         Organization Name: <br />
                         <br />                
@@ -63,18 +62,24 @@
                         <br />                
                     </td>
                     <td>
-                        <textarea style="width: 332px; height: 205px">
+                        <textarea style="width: 332px; height: 205px" cols="20" name="S1" rows="1">
 
                         </textarea>
 
                     </td>
                 </tr>
-            </table>
+                <tr style="height: 40px">
+                    <td>
+
+                    </td>
+                </tr>
+                </table>            
             <br />
-            <br />
-            <a style="align-self">
+            <a style="position: absolute; left: 188px; top: 820px; width: 161px; height: 22px;">
                 <asp:Button runat="server" Text="Register" Width="302px"></asp:Button>               
             </a>
+            <br />            
         </div>
+    <div class="row">
     </div>
 </asp:Content>
