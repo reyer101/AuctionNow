@@ -22,7 +22,7 @@
                 <td style="width: 28px; border:medium solid black; font-style:oblique">Size:</td>
                 <td style="border:medium solid black; font-style:oblique; width: 119px;">Storage Location:</td>
             </tr>
-            <tr>
+            <tr id="IR1">
                 <td style="width: 151px; border:solid; border-color:black;border-width:thin">
                     &nbsp;</td>
                 <td style="width: 99px; border:solid; border-color:black;border-width:thin">
@@ -42,7 +42,7 @@
                 <td style= "border:thin solid black; width: 119px;">
                     &nbsp;</td>
             </tr>
-            <tr>
+            <tr id="IR2">
                 <td style="width: 151px; border:solid; border-color:black;border-width:thin">
                     &nbsp;</td>
                 <td style="width: 99px; border:solid; border-color:black;border-width:thin">
@@ -62,7 +62,7 @@
                 <td style= "border:thin solid black; width: 119px;">
                     &nbsp;</td>
             </tr>
-            <tr>
+            <tr id="IR3">
                 <td style="width: 151px; border:solid; border-color:black;border-width:thin">
                     &nbsp;</td>
                 <td style="width: 99px; border:solid; border-color:black;border-width:thin">
@@ -82,7 +82,7 @@
                 <td style= "border:thin solid black; width: 119px;">
                     &nbsp;</td>
             </tr>
-            <tr>
+            <tr id="IR4">
                 <td style="width: 151px; border:solid; border-color:black;border-width:thin">
                     &nbsp;</td>
                 <td style="width: 99px; border:solid; border-color:black;border-width:thin">
@@ -102,7 +102,27 @@
                 <td style= "border:thin solid black; width: 119px;">
                     &nbsp;</td>
             </tr>
-            <tr>
+            <tr id="IR5">
+                <td style="width: 151px; border:solid; border-color:black;border-width:thin">
+                    &nbsp;</td>
+                <td style="width: 99px; border:solid; border-color:black;border-width:thin">
+                    &nbsp;</td>
+                <td style="width: 71px; border:solid; border-color:black;border-width:thin">
+                    &nbsp;</td>
+                <td style="width: 71px; border:solid; border-color:black;border-width:thin">
+                    &nbsp;</td>
+                <td style="width: 103px; border:thin solid black; ">
+                    &nbsp;</td>
+                <td style="width: 86px; border:solid; border-color:black;border-width:thin">
+                    &nbsp;</td>
+                <td style="width: 105px; border:thin solid black; ">
+                    &nbsp;</td>
+                <td style="width: 28px; border:thin solid black; ">
+                    &nbsp;</td>
+                <td style= "border:thin solid black; width: 119px;">
+                    &nbsp;</td>
+            </tr>
+           <tr id="IR6" >
                 <td style="width: 151px; border:solid; border-color:black;border-width:thin">
                     &nbsp;</td>
                 <td style="width: 99px; border:solid; border-color:black;border-width:thin">
@@ -122,7 +142,7 @@
                 <td style= "border:thin solid black; width: 119px;">
                     &nbsp;</td>
             </tr>
-           <tr>
+           <tr id="IR7">
                 <td style="width: 151px; border:solid; border-color:black;border-width:thin">
                     &nbsp;</td>
                 <td style="width: 99px; border:solid; border-color:black;border-width:thin">
@@ -142,7 +162,7 @@
                 <td style= "border:thin solid black; width: 119px;">
                     &nbsp;</td>
             </tr>
-           <tr>
+           <tr id="IR8">
                 <td style="width: 151px; border:solid; border-color:black;border-width:thin">
                     &nbsp;</td>
                 <td style="width: 99px; border:solid; border-color:black;border-width:thin">
@@ -162,7 +182,7 @@
                 <td style= "border:thin solid black; width: 119px;">
                     &nbsp;</td>
             </tr>
-           <tr>
+           <tr id="IR9">
                 <td style="width: 151px; border:solid; border-color:black;border-width:thin">
                     &nbsp;</td>
                 <td style="width: 99px; border:solid; border-color:black;border-width:thin">
@@ -182,7 +202,7 @@
                 <td style= "border:thin solid black; width: 119px;">
                     &nbsp;</td>
             </tr>
-           <tr>
+            <tr id="IR10">
                 <td style="width: 151px; border:solid; border-color:black;border-width:thin">
                     &nbsp;</td>
                 <td style="width: 99px; border:solid; border-color:black;border-width:thin">
@@ -202,7 +222,7 @@
                 <td style= "border:thin solid black; width: 119px;">
                     &nbsp;</td>
             </tr>
-            <tr>
+            <tr id="IR11">
                 <td style="width: 151px; border:solid; border-color:black;border-width:thin">
                     &nbsp;</td>
                 <td style="width: 99px; border:solid; border-color:black;border-width:thin">
@@ -222,7 +242,7 @@
                 <td style= "border:thin solid black; width: 119px;">
                     &nbsp;</td>
             </tr>
-            <tr>
+           <tr id="IR12">
                 <td style="width: 151px; border:solid; border-color:black;border-width:thin">
                     &nbsp;</td>
                 <td style="width: 99px; border:solid; border-color:black;border-width:thin">
@@ -242,7 +262,7 @@
                 <td style= "border:thin solid black; width: 119px;">
                     &nbsp;</td>
             </tr>
-           <tr>
+            <tr id="IR13">
                 <td style="width: 151px; border:solid; border-color:black;border-width:thin">
                     &nbsp;</td>
                 <td style="width: 99px; border:solid; border-color:black;border-width:thin">
@@ -262,7 +282,7 @@
                 <td style= "border:thin solid black; width: 119px;">
                     &nbsp;</td>
             </tr>
-            <tr>
+             <tr id="IR14">
                 <td style="width: 151px; border:solid; border-color:black;border-width:thin">
                     &nbsp;</td>
                 <td style="width: 99px; border:solid; border-color:black;border-width:thin">
@@ -282,7 +302,7 @@
                 <td style= "border:thin solid black; width: 119px;">
                     &nbsp;</td>
             </tr>
-             <tr>
+             <tr id="IR15">
                 <td style="width: 151px; border:solid; border-color:black;border-width:thin">
                     &nbsp;</td>
                 <td style="width: 99px; border:solid; border-color:black;border-width:thin">
@@ -302,7 +322,7 @@
                 <td style= "border:thin solid black; width: 119px;">
                     &nbsp;</td>
             </tr>
-             <tr>
+            <tr id="IR16">
                 <td style="width: 151px; border:solid; border-color:black;border-width:thin">
                     &nbsp;</td>
                 <td style="width: 99px; border:solid; border-color:black;border-width:thin">
@@ -322,26 +342,7 @@
                 <td style= "border:thin solid black; width: 119px;">
                     &nbsp;</td>
             </tr>
-            <tr>
-                <td style="width: 151px; border:solid; border-color:black;border-width:thin">
-                    &nbsp;</td>
-                <td style="width: 99px; border:solid; border-color:black;border-width:thin">
-                    &nbsp;</td>
-                <td style="width: 71px; border:solid; border-color:black;border-width:thin">
-                    &nbsp;</td>
-                <td style="width: 108px; border:thin solid black; ">
-                    &nbsp;</td>
-                <td style="width: 103px; border:thin solid black; ">
-                    &nbsp;</td>
-                <td style="width: 86px; border:solid; border-color:black;border-width:thin">
-                    &nbsp;</td>
-                <td style="width: 105px; border:thin solid black; ">
-                    &nbsp;</td>
-                <td style="width: 28px; border:thin solid black; ">
-                    &nbsp;</td>
-                <td style= "border:thin solid black; width: 119px;">
-                    &nbsp;</td>
-            </tr><tr>
+            <tr id="IR17">
                 <td style="width: 151px; border:solid; border-color:black;border-width:thin">
                     &nbsp;</td>
                 <td style="width: 99px; border:solid; border-color:black;border-width:thin">
@@ -361,7 +362,7 @@
                 <td style= "border:thin solid black; width: 119px;">
                     &nbsp;</td>
             </tr>
-             <tr>
+             <tr id="IR18">
                 <td style="width: 151px; border:solid; border-color:black;border-width:thin">
                     &nbsp;</td>
                 <td style="width: 99px; border:solid; border-color:black;border-width:thin">
@@ -381,7 +382,7 @@
                 <td style= "border:thin solid black; width: 119px;">
                     &nbsp;</td>
             </tr>
-            <tr>
+            <tr id="IR19">
                 <td style="width: 151px; border:solid; border-color:black;border-width:thin">
                     &nbsp;</td>
                 <td style="width: 99px; border:solid; border-color:black;border-width:thin">
@@ -401,7 +402,7 @@
                 <td style= "border:thin solid black; width: 119px;">
                     &nbsp;</td>
             </tr>
-            <tr>
+            <tr id="IR20">
                 <td style="width: 151px; border:solid; border-color:black;border-width:thin">
                     &nbsp;</td>
                 <td style="width: 99px; border:solid; border-color:black;border-width:thin">
@@ -421,7 +422,7 @@
                 <td style= "border:thin solid black; width: 119px;">
                     &nbsp;</td>
             </tr>
-            <tr>
+            <tr id="IR21">
                 <td style="width: 151px; border:solid; border-color:black;border-width:thin">
                     &nbsp;</td>
                 <td style="width: 99px; border:solid; border-color:black;border-width:thin">
