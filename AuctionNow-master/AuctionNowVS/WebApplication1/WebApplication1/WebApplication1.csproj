@@ -225,6 +225,7 @@
     <Content Include="Images\CreditCardLogos.jpg" />
     <Content Include="Images\PayPalCard.png" />
     <Content Include="InventorySheet.aspx" />
+    <Content Include="InventorySheetViewOnly.aspx" />
     <Content Include="Login.aspx" />
     <Content Include="MakeABid.aspx" />
     <Content Include="NonProfitLogin.aspx" />
@@ -540,6 +541,13 @@
     </Compile>
     <Compile Include="InventorySheet.aspx.designer.cs">
       <DependentUpon>InventorySheet.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="InventorySheetViewOnly.aspx.cs">
+      <DependentUpon>InventorySheetViewOnly.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="InventorySheetViewOnly.aspx.designer.cs">
+      <DependentUpon>InventorySheetViewOnly.aspx</DependentUpon>
     </Compile>
     <Compile Include="Login.aspx.cs">
       <DependentUpon>Login.aspx</DependentUpon>
