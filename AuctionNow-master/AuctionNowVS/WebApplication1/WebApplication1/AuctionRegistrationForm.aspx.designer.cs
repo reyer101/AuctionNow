@@ -13,13 +13,13 @@ namespace WebApplication1 {
     public partial class AuctionRegistrationForm {
         
         /// <summary>
-        /// tb_orgName control.
+        /// Organization control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox tb_orgName;
+        protected global::System.Web.UI.WebControls.TextBox Organization;
         
         /// <summary>
         /// tb_auctDate control.
@@ -47,5 +47,14 @@ namespace WebApplication1 {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox tb_numberItems;
+        
+        /// <summary>
+        /// Comments control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox Comments;
     }
 }

@@ -18,9 +18,8 @@
                         <br />                
                     </td>
                     <td>
-                        <asp:TextBox ID="tb_orgName" runat="server" Width="259px" Height ="24px"></asp:TextBox> 
-
-                    </td>
+                        <asp:TextBox ID="Organization" runat="server" Width="259px" Height ="24px"></asp:TextBox> 
+                        &nbsp;</td>
                 </tr>
                 <tr>
                     <td style="width: 140px">
@@ -62,9 +61,8 @@
                         <br />                
                     </td>
                     <td>
-                        <textarea style="width: 332px; height: 205px" cols="20" name="S1" rows="1">
+                       <asp:TextBox ID="Comments" runat="server" Width="259px" Height ="72px"></asp:TextBox> 
 
-                        </textarea>
 
                     </td>
                 </tr>
@@ -76,7 +74,7 @@
                 </table>            
             <br />
             <a style="position: absolute; left: 188px; top: 820px; width: 161px; height: 22px;">
-                <asp:Button runat="server" Text="Register" Width="302px"></asp:Button>               
+                <asp:Button runat="server" Text="Register" Width="302px" OnClick="Unnamed1_Click"></asp:Button>               
             </a>
             <br />            
         </div>
