@@ -35,7 +35,17 @@ namespace WebApplication1
             cmd.Parameters.AddWithValue("@CreditCardNum", TextBox8.Text);
             cmd.Parameters.AddWithValue("@CVC", TextBox9.Text);
             cmd.Parameters.AddWithValue("@ExpirationDate", TextBox10.Text);
-           cmd.ExecuteNonQuery();
+            cmd.ExecuteNonQuery();
+            message("Registration successful");
+
+        }
+        public void message(String msg)
+        {
+
+            Page.ClientScript.RegisterStartupScript(Page.GetType(), "Message Box", "<script language='javascript'>alert('" + msg + "')</script>");
         }
     }
 }
+
+  
+

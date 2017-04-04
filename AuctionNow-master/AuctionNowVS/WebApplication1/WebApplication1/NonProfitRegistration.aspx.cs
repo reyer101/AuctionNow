@@ -30,7 +30,13 @@ namespace WebApplication1
             cmd.Parameters.AddWithValue("@Address", TextBox4.Text);
             cmd.Parameters.AddWithValue("@Username", TextBox5.Text);
             cmd.Parameters.AddWithValue("@Password", TextBoxPassword.Text);
-           cmd.ExecuteNonQuery();
+            cmd.ExecuteNonQuery();
+            message("Registration successful");
+
+        }
+        public void message(String msg)
+        {
+            Page.ClientScript.RegisterStartupScript(Page.GetType(), "Message Box", "<script language='javascript'>alert('" + msg + "')</script>");
         }
     }
 }
