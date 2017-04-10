@@ -31,7 +31,16 @@ namespace WebApplication1
             //cmd.Parameters.AddWithValue("@Username", TextBox5.Text);
             //cmd.Parameters.AddWithValue("@Password", TextBoxPassword.Text);
             //cmd.ExecuteNonQuery();
-            message("Registration successful");
+            if (String.IsNullOrEmpty(TextBox1.Text) || String.IsNullOrEmpty(TextBox2.Text) || String.IsNullOrEmpty(TextBox3.Text) || String.IsNullOrEmpty(TextBox4.Text) || String.IsNullOrEmpty(TextBox5.Text) ||String.IsNullOrEmpty(TextBoxPassword.Text))
+            {
+
+                message("Registration Failed, please check for missing fields");
+
+            }
+            else
+            {
+                message("Registration successful");
+            }
 
         }
         public void message(String msg)

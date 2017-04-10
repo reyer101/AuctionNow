@@ -30,7 +30,16 @@ namespace WebApplication1
             //cmd.Parameters.AddWithValue("@AdditionalComments", Comments.Text);
             //cmd.ExecuteNonQuery();
 
-            message("Registration successful");
+            if (String.IsNullOrEmpty(Organization.Text) || String.IsNullOrEmpty(tb_auctDate.Text) || String.IsNullOrEmpty(tb_auctTime.Text) || String.IsNullOrEmpty(tb_numberItems.Text) || String.IsNullOrEmpty(Comments.Text))
+            {
+
+                message("Registration Failed, please check for missing fields");
+
+            }
+            else
+            {
+                message("Registration successful");
+            }
 
         }
         public void message(String msg)
