@@ -195,7 +195,9 @@
     <Content Include="Account\TwoFactorAuthenticationSignIn.aspx" />
     <Content Include="Account\VerifyPhoneNumber.aspx" />
     <Content Include="AuctionItems.aspx" />
+    <Content Include="AuctionList.aspx" />
     <Content Include="AuctionRegistrationForm.aspx" />
+    <Content Include="Auctions.aspx" />
     <Content Include="BidderLogin.aspx" />
     <Content Include="BidderRegistration.aspx" />
     <Content Include="Bidding.aspx" />
@@ -406,12 +408,26 @@
     <Compile Include="AuctionItems.aspx.designer.cs">
       <DependentUpon>AuctionItems.aspx</DependentUpon>
     </Compile>
+    <Compile Include="AuctionList.aspx.cs">
+      <DependentUpon>AuctionList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AuctionList.aspx.designer.cs">
+      <DependentUpon>AuctionList.aspx</DependentUpon>
+    </Compile>
     <Compile Include="AuctionRegistrationForm.aspx.cs">
       <DependentUpon>AuctionRegistrationForm.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="AuctionRegistrationForm.aspx.designer.cs">
       <DependentUpon>AuctionRegistrationForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Auctions.aspx.cs">
+      <DependentUpon>Auctions.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Auctions.aspx.designer.cs">
+      <DependentUpon>Auctions.aspx</DependentUpon>
     </Compile>
     <Compile Include="BidderLogin.aspx.cs">
       <DependentUpon>BidderLogin.aspx</DependentUpon>
