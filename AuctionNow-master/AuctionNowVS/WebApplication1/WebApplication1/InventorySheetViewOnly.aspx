@@ -447,7 +447,6 @@
             
                 
         </div>
-        <a style="position:absolute; top: 969px; left: 599px;"><asp:Button ID="Button1" runat="server" Text="Publish" /></a>
     </div>
 
 
