@@ -24,7 +24,7 @@
         .auto-style4 {
             position: relative;
             min-height: 1px;
-            top: -42px;
+            top: -15px;
             left: 8px;
             height: 542px;
             float: left;

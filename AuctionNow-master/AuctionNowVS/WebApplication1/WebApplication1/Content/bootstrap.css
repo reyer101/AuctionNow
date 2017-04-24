@@ -185,6 +185,7 @@ input[type="reset"],
 input[type="submit"] {
   cursor: pointer;
   -webkit-appearance: button;
+    text-align: center;
 }
 
 button[disabled],
