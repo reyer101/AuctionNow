@@ -6,7 +6,9 @@
         
         <p style="position:absolute; top: 137px; left: 108px; width: 864px;"; class="lead">//inventory sheet description</p>        
     </div>
+        <asp:PlaceHolder ID = "PlaceHolder1" runat="server" />
 
+<%--
     <div class="row">
         <div style="background-color:lightgray; width:1154px" class="col-md-4">
             <h2>//contnet</h2>
@@ -448,7 +450,6 @@
                 
         </div>
     </div>
-
-
+    --%>
 
 </asp:Content>

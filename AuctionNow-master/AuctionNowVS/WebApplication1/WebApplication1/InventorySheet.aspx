@@ -160,7 +160,7 @@
                         <br />
                     </td>
                     <td class="auto-style2">
-                       <a style="position:absolute; top: 673px; left: 277px;"> <asp:Button ID="PublishInventory" runat="server" Text="Submit" /></a>
+                       <a style="position:absolute; top: 673px; left: 277px;"> <asp:Button ID="PublishInventory" runat="server" Text="Submit" OnClick="PublishInventory_Click" /></a>
 
                      </td>   
                         
