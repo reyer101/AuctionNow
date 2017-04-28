@@ -22,7 +22,8 @@ namespace WebApplication1
 
         protected void Unnamed1_Click(object sender, EventArgs e)
         {
-            SqlCommand cmd = new SqlCommand("insert into AuctionRegistration" + "(OrganizationName, AuctionDate, AuctionTime, NumOfItems, AdditionalComments)values(@OrganizationName, @AuctionDate, @AuctionTime, @NumOfItems, @AdditionalComments)",connection);
+            SqlCommand cmd = new SqlCommand("insert into AuctionRegistration" + "(AuctionName, OrganizationName, AuctionDate, AuctionTime, NumOfItems, AdditionalComments)values(@AuctionName, @OrganizationName, @AuctionDate, @AuctionTime, @NumOfItems, @AdditionalComments)",connection);
+            cmd.Parameters.AddWithValue("@AuctionName",Auction.Text );
             cmd.Parameters.AddWithValue("@OrganizationName", Organization.Text);
             cmd.Parameters.AddWithValue("@AuctionDate", tb_auctDate.Text);
             cmd.Parameters.AddWithValue("@AuctionTime", tb_auctTime.Text);

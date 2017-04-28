@@ -13,6 +13,15 @@ namespace WebApplication1 {
     public partial class AuctionList {
         
         /// <summary>
+        /// selectAuction control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlSelect selectAuction;
+        
+        /// <summary>
         /// selectButton control.
         /// </summary>
         /// <remarks>

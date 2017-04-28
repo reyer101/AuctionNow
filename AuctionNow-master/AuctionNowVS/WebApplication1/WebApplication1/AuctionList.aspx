@@ -16,13 +16,15 @@
                 <p>&nbsp;</p>
                 <br />
                 <p>&nbsp;</p>
-            <select name="auctionList" runat="server" size="5" style ="position:absolute; left: 137px; top: 82px; width: 283px; height: 87px;">
+            <select id="selectAuction" name="auctionList" runat="server" size="5" style ="position:absolute; left: 137px; top: 82px; width: 283px; height: 87px;">
+                <%--
                 <option>Auction1</option>
                 <option>Auction2</option>
                 <option>Auction3</option>
                 <option>Auction4</option>
                 <option>Auction5</option>
                 <option>Auction6</option>
+                --%>
             </select>
             <a style="position:absolute; left: 198px; top: 191px;">
                 <asp:Button ID="selectButton" runat="server" Text="select" Width="162px"/>

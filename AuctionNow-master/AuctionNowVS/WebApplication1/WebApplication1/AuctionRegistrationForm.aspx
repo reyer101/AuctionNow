@@ -14,6 +14,16 @@
                 <tr>
                     <td style="width: 140px">                        
                         <br />
+                        Auction Name: <br />
+                        <br />                
+                    </td>
+                    <td>
+                        <asp:TextBox ID="Auction" runat="server" Width="259px" Height ="24px"></asp:TextBox> 
+                        &nbsp;</td>
+                </tr>
+                <tr>
+                    <td style="width: 140px">                        
+                        <br />
                         Organization Name: <br />
                         <br />                
                     </td>
