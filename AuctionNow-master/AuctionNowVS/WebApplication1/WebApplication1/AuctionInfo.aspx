@@ -1,10 +1,6 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="InventorySheet.aspx.cs" Inherits="WebApplication1.InventorySheet" %>
-<asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server"> 
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="AuctionInfo.aspx.cs" Inherits="WebApplication1.AuctionInfo" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
     <style>
-        
-
-
-
         .auto-style1 {
             width: 167px;
             height: 57px;
@@ -12,9 +8,6 @@
         .auto-style2 {
             height: 57px;
         }
-        
-
-
 
         .auto-style4 {
             position: relative;
@@ -27,20 +20,16 @@
             padding-left: 15px;
             padding-right: 15px;
         }
-        
-
-
-
     </style>
     <div class="jumbotron">
-        <h1 style="position:absolute; top: 62px; left: 111px; width: 568px; height: 48px; font-family: 'harlow Solid Italic'; font-size: 54px;" id="head1">&nbsp;Inventory Sheet</h1>
+        <h1 style="position:absolute; top: 62px; left: 111px; width: 521px; height: 48px; font-family: 'harlow Solid Italic'; font-size: 54px;" id="head1">Auction Information</h1>
         <br />
         
-        <p style="position:absolute; top: 140px; left: 108px; width: 864px;"; class="lead">Welcome to AuctionNow&#39;s&nbsp; Inventory Sheet</p>        
+        <p style="position:absolute; top: 140px; left: 108px; width: 864px;"; class="lead">Welcome to AuctionNow&#39;s&nbsp; Auction Information Page</p>        
     </div>
-     <div class="row">
+    <div class="row">
         <div style="background-color:lightgray; " class="auto-style4">
-            <h2>Inventory Sheet
+           <h2>Inventory Sheet
             </h2>
             <p>Fill out the following inventory sheet information to be entered into our system</p>
             <table style="width: 100%">
@@ -160,14 +149,22 @@
                         <br />
                     </td>
                     <td class="auto-style2">
-                       <a style="position:absolute; top: 673px; left: 277px;"> <asp:Button ID="PublishInventory" runat="server" Text="Submit" OnClick="PublishInventory_Click" /></a>
+                       <a style="position:absolute; top: 673px; left: 277px;"> 
+                           <asp:Button runat="server" Text="Submit"/>
 
-                     </td>                       
-                </tr>               
+                       </a>
+
+                     </td>   
+                        
+
+                     
+                </tr>
                 
-             </table>  
                 
+                
+                </table>
         </div>
-    </div>   
-  
+    </div>
 </asp:Content>
+     
+

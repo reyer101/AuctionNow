@@ -194,6 +194,7 @@
     <Content Include="Account\ResetPasswordConfirmation.aspx" />
     <Content Include="Account\TwoFactorAuthenticationSignIn.aspx" />
     <Content Include="Account\VerifyPhoneNumber.aspx" />
+    <Content Include="AuctionInfo.aspx" />
     <Content Include="AuctionItems.aspx" />
     <Content Include="AuctionList.aspx" />
     <Content Include="AuctionRegistrationForm.aspx" />
@@ -401,6 +402,13 @@
     <Compile Include="App_Start\IdentityConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
+    <Compile Include="AuctionInfo.aspx.cs">
+      <DependentUpon>AuctionInfo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AuctionInfo.aspx.designer.cs">
+      <DependentUpon>AuctionInfo.aspx</DependentUpon>
+    </Compile>
     <Compile Include="AuctionItems.aspx.cs">
       <DependentUpon>AuctionItems.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
