@@ -20,6 +20,11 @@
             padding-left: 15px;
             padding-right: 15px;
         }
+        .auto-style5 {
+            position: absolute;
+            top: 677px;
+            left: 252px;
+        }
     </style>
     <div class="jumbotron">
         <h1 style="position:absolute; top: 62px; left: 111px; width: 521px; height: 48px; font-family: 'harlow Solid Italic'; font-size: 54px;" id="head1">Auction Information</h1>
@@ -29,9 +34,9 @@
     </div>
     <div class="row">
         <div style="background-color:lightgray; " class="auto-style4">
-           <h2>Inventory Sheet
+           <h2>Item Information Sheet
             </h2>
-            <p>Fill out the following inventory sheet information to be entered into our system</p>
+            <p>Item Information</p>
             <table style="width: 100%">
                 <tr>
                     <td style="width: 167px">
@@ -65,21 +70,11 @@
                     <td>
                         <asp:TextBox ID="Quantity" runat="server" Width="259px" Height="24px"></asp:TextBox>
                     </td>
-                </tr>
-                <tr>
-                    <td style="width: 167px">
-                        <br />
-                        Starting Price:<br />
-                        <br />
-                    </td>
-                    <td>
-                        <asp:TextBox ID="StartingPrice" runat="server" Width="259px" Height="24px"></asp:TextBox>
-                    </td>
-                </tr>
+                </tr>               
                 <tr>
                     <td class="auto-style1">
                         <br />
-                        Selling Price:<br />
+                        Current Bid:<br />
                         <br />
                     </td>
                     <td class="auto-style2">
@@ -96,7 +91,6 @@
                         <asp:TextBox ID="Condition" runat="server" Width="259px" Height="24px"></asp:TextBox>
 
                      </td>   
-                        
 
                      
                 </tr>
@@ -145,12 +139,16 @@
                 <tr>
                     <td class="auto-style1">
                         <br />
-                        Publish:<br />
+                        Your Bid:<br />
                         <br />
                     </td>
                     <td class="auto-style2">
-                       <a style="position:absolute; top: 673px; left: 277px;"> 
-                           <asp:Button runat="server" Text="Submit"/>
+                        <asp:TextBox ID="TextBox1" runat="server" Width="259px" Height="24px"></asp:TextBox>
+
+                     </td> 
+                    <td class="auto-style2">
+                       <a class="auto-style5"> 
+                           <asp:Button runat="server" Text="Make Bid"/>
 
                        </a>
 
