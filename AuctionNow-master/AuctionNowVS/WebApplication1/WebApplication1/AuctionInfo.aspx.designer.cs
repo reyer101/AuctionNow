@@ -19,7 +19,7 @@ namespace WebApplication1 {
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox AuctionName;
+        protected global::System.Web.UI.WebControls.Label AuctionName;
         
         /// <summary>
         /// ItemName control.
@@ -28,7 +28,7 @@ namespace WebApplication1 {
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox ItemName;
+        protected global::System.Web.UI.WebControls.Label ItemName;
         
         /// <summary>
         /// Quantity control.
@@ -37,16 +37,16 @@ namespace WebApplication1 {
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox Quantity;
+        protected global::System.Web.UI.WebControls.Label Quantity;
         
         /// <summary>
-        /// SellingPrice control.
+        /// CurrentBid control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox SellingPrice;
+        protected global::System.Web.UI.WebControls.Label CurrentBid;
         
         /// <summary>
         /// Condition control.
@@ -55,7 +55,7 @@ namespace WebApplication1 {
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox Condition;
+        protected global::System.Web.UI.WebControls.Label Condition;
         
         /// <summary>
         /// Comments control.
@@ -64,7 +64,7 @@ namespace WebApplication1 {
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox Comments;
+        protected global::System.Web.UI.WebControls.Label Comments;
         
         /// <summary>
         /// Size control.
@@ -73,7 +73,7 @@ namespace WebApplication1 {
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox Size;
+        protected global::System.Web.UI.WebControls.Label Size;
         
         /// <summary>
         /// StorageLocation control.
@@ -82,7 +82,7 @@ namespace WebApplication1 {
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox StorageLocation;
+        protected global::System.Web.UI.WebControls.Label StorageLocation;
         
         /// <summary>
         /// TextBox1 control.

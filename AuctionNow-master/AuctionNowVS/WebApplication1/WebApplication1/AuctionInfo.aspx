@@ -22,8 +22,8 @@
         }
         .auto-style5 {
             position: absolute;
-            top: 677px;
-            left: 252px;
+            top: 679px;
+            left: 232px;
         }
     </style>
     <div class="jumbotron">
@@ -46,7 +46,7 @@
                     </td>
 
                     <td>
-                        <asp:TextBox ID="AuctionName" runat="server" Width="259px" Height="24px"></asp:TextBox>
+                        <asp:Label Text ="AuctionNameHolder" ID="AuctionName" runat="server" Width="259px" Height="24px"></asp:Label>
                     </td>
                 </tr>
                 
@@ -58,7 +58,7 @@
                         <br />
                     </td>
                     <td>
-                        <asp:TextBox ID="ItemName" runat="server" Width="259px" Height="26px"></asp:TextBox>
+                        <asp:Label Text="ItemNameHolder" ID="ItemName" runat="server" Width="259px" Height="26px"></asp:Label>
                     </td>
                 </tr>
                 <tr>
@@ -68,7 +68,7 @@
                         <br />
                     </td>
                     <td>
-                        <asp:TextBox ID="Quantity" runat="server" Width="259px" Height="24px"></asp:TextBox>
+                        <asp:Label Text ="QuantityHolder" ID="Quantity" runat="server" Width="259px" Height="24px"></asp:Label>
                     </td>
                 </tr>               
                 <tr>
@@ -78,7 +78,7 @@
                         <br />
                     </td>
                     <td class="auto-style2">
-                        <asp:TextBox ID="SellingPrice" runat="server" Width="259px" Height="24px"></asp:TextBox>
+                        <asp:Label Text="CurrentBidHolder " ID="CurrentBid" runat="server" Width="259px" Height="24px"></asp:Label>
                     </td>
                 </tr>
                 <tr>
@@ -88,11 +88,9 @@
                         <br />
                     </td>
                     <td class="auto-style2">
-                        <asp:TextBox ID="Condition" runat="server" Width="259px" Height="24px"></asp:TextBox>
+                        <asp:Label Text="ConditionHolder" ID="Condition" runat="server" Width="259px" Height="24px"></asp:Label>
 
-                     </td>   
-
-                     
+                     </td>                    
                 </tr>
                 <tr>
                     <td class="auto-style1">
@@ -101,12 +99,9 @@
                         <br />
                     </td>
                     <td class="auto-style2">
-                        <asp:TextBox ID="Comments" runat="server" Width="259px" Height="24px"></asp:TextBox>
+                        <asp:Label Text="CommentsHolder" ID="Comments" runat="server" Width="259px" Height="24px"></asp:Label>
 
-                     </td>   
-                        
-
-                     
+                     </td>                      
                 </tr>
                 <tr>
                     <td class="auto-style1">
@@ -115,12 +110,9 @@
                         <br />
                     </td>
                     <td class="auto-style2">
-                        <asp:TextBox ID="Size" runat="server" Width="259px" Height="24px"></asp:TextBox>
+                        <asp:Label Text="SizeHolder" ID="Size" runat="server" Width="259px" Height="24px"></asp:Label>
 
-                     </td>   
-                        
-
-                     
+                     </td>                     
                 </tr>
                 <tr>
                     <td class="auto-style1">
@@ -129,12 +121,9 @@
                         <br />
                     </td>
                     <td class="auto-style2">
-                        <asp:TextBox ID="StorageLocation" runat="server" Width="259px" Height="24px"></asp:TextBox>
+                        <asp:Label Text="StorageLocationHolder" ID="StorageLocation" runat="server" Width="259px" Height="24px"></asp:Label>
 
-                     </td>   
-                        
-
-                     
+                     </td>                
                 </tr>
                 <tr>
                     <td class="auto-style1">
@@ -143,24 +132,16 @@
                         <br />
                     </td>
                     <td class="auto-style2">
-                        <asp:TextBox ID="TextBox1" runat="server" Width="259px" Height="24px"></asp:TextBox>
+                        <asp:TextBox ID="TextBox1" runat="server" Width="175px" Height="24px"></asp:TextBox>
 
                      </td> 
                     <td class="auto-style2">
                        <a class="auto-style5"> 
                            <asp:Button runat="server" Text="Make Bid"/>
-
                        </a>
-
-                     </td>   
-                        
-
-                     
-                </tr>
-                
-                
-                
-                </table>
+                    </td>               
+                </tr>               
+            </table>
         </div>
     </div>
 </asp:Content>
