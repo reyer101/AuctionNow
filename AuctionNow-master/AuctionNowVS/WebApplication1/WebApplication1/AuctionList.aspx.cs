@@ -35,5 +35,11 @@ namespace WebApplication1
                 selectAuction.DataBind();
             }
         }
+
+        protected void selectButton_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("InventorySheet.aspx");
+
+        }
     }
 }

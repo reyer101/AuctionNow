@@ -13,5 +13,11 @@ namespace WebApplication1
         {
 
         }
+
+        protected void selectButton_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("AuctionInfo.aspx");
+
+        }
     }
 }

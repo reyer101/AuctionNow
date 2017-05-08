@@ -27,7 +27,7 @@
                 --%>
             </select>
             <a style="position:absolute; left: 198px; top: 191px;">
-                <asp:Button ID="selectButton" runat="server" Text="select" Width="162px"/>
+                <asp:Button ID="selectButton" runat="server" Text="select" Width="162px" OnClick="selectButton_Click"/>
             </a>            
         </div>        
     </div>
