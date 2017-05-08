@@ -111,6 +111,7 @@
                         
                             <ul>
                                 <li><a runat="server" href="~/AuctionList">Auction List</a></li>
+                                <li><a runat="server" href="~/AuctionItemList">Auction Item List</a></li>
                                 <li><a runat="server" href="~/Bidding">Bidding</a></li>
                                 <li><a href="~/MakeABid" runat="server">Make A Bid</a></li>
                                 <li><a href="~/AuctionItems" runat="server">Auction Items</a></li>
