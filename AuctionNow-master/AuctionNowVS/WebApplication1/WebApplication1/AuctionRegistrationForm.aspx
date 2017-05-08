@@ -83,7 +83,7 @@
                 </tr>
                 </table>            
             <br />
-            <a style="position: absolute; left: 187px; top: 684px; width: 161px; height: 22px;">
+            <a style="position: absolute; left: 119px; top: 792px; width: 161px; height: 22px;">
                 <asp:Button runat="server" Text="Register" Width="302px" OnClick="Unnamed1_Click"></asp:Button>               
             </a>
             <br />            
