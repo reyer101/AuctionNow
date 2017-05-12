@@ -202,7 +202,6 @@
     <Content Include="Auctions.aspx" />
     <Content Include="BidderLogin.aspx" />
     <Content Include="BidderRegistration.aspx" />
-    <Content Include="Bidding.aspx" />
     <Content Include="Calendar.aspx" />
     <Content Include="CalendarApril2017.aspx" />
     <Content Include="CalendarAugust2017.aspx" />
@@ -235,8 +234,6 @@
     <Content Include="NonProfitLogin.aspx" />
     <Content Include="NonProfitRegistration.aspx" />
     <Content Include="Registration.aspx" />
-    <Content Include="ScheduleAuction.aspx" />
-    <Content Include="Scheduling.aspx" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
@@ -459,13 +456,6 @@
     <Compile Include="BidderRegistration.aspx.designer.cs">
       <DependentUpon>BidderRegistration.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Bidding.aspx.cs">
-      <DependentUpon>Bidding.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Bidding.aspx.designer.cs">
-      <DependentUpon>Bidding.aspx</DependentUpon>
-    </Compile>
     <Compile Include="Calendar.aspx.cs">
       <DependentUpon>Calendar.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -617,20 +607,6 @@
     </Compile>
     <Compile Include="Registration.aspx.designer.cs">
       <DependentUpon>Registration.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="ScheduleAuction.aspx.cs">
-      <DependentUpon>ScheduleAuction.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="ScheduleAuction.aspx.designer.cs">
-      <DependentUpon>ScheduleAuction.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Scheduling.aspx.cs">
-      <DependentUpon>Scheduling.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Scheduling.aspx.designer.cs">
-      <DependentUpon>Scheduling.aspx</DependentUpon>
     </Compile>
     <Compile Include="Site.Master.cs">
       <DependentUpon>Site.Master</DependentUpon>
