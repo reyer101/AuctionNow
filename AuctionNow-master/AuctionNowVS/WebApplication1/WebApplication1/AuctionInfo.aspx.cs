@@ -4,14 +4,76 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using System.Data.SqlClient;
+using System.Data;
+using System.Text;
+using System.Configuration;
 
 namespace WebApplication1
 {
     public partial class AuctionInfo : System.Web.UI.Page
     {
+
         protected void Page_Load(object sender, EventArgs e)
         {
+            if (!IsPostBack)
+            {
+                string ConnectString = "Server=tcp:auction-now.database.windows.net,1433;Initial Catalog=AuctionNow;Persist Security Info=False;User ID=Shayne@auction-now.database.windows.net;Password= auctionteam$4;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;";
+                string QueryString = "SELECT AuctionName, ItemName, Quantity, StartingPrice, SellingPrice, Condition, Comments, Size, StorageLocation FROM InventorySheet WHERE AuctionName = 'AuctionOne';";
 
+                using (var connection = new SqlConnection(ConnectString))
+                {
+                    using (var command = connection.CreateCommand())
+                    {
+                        command.CommandText = QueryString;
+
+                        connection.Open();
+                        using (var reader = command.ExecuteReader())
+                        {
+                            var auctionName = reader.GetOrdinal("AuctionName");
+                            var itemName = reader.GetOrdinal("ItemName");
+                            var quantity = reader.GetOrdinal("Quantity");
+                            var startingPrice = reader.GetOrdinal("StartingPrice");
+                            var sellingPrice = reader.GetOrdinal("SellingPrice");
+                            var condition = reader.GetOrdinal("Condition");
+                            var comments = reader.GetOrdinal("Comments");
+                            var size = reader.GetOrdinal("Size");
+                            var storageLocation = reader.GetOrdinal("StorageLocation");
+
+                            while (reader.Read())
+                            {
+                                var value1 = reader.GetValue(auctionName).ToString();
+                                var value2 = reader.GetValue(itemName).ToString();
+                                var value3 = reader.GetValue(quantity).ToString();
+                                var value4 = reader.GetValue(startingPrice).ToString();
+                                var value5 = reader.GetValue(sellingPrice).ToString();
+                                var value6 = reader.GetValue(condition).ToString();
+                                var value9 = reader.GetValue(comments).ToString();
+                                var value7 = reader.GetValue(size).ToString();
+                                var value8 = reader.GetValue(storageLocation).ToString();
+
+                                AuctionName.Text = value1;
+                                ItemName.Text = value2;
+                                Quantity.Text = value3;
+                                CurrentBid.Text = value4;
+                                Condition.Text = value6;
+                                Comments.Text = value9;
+                                Size.Text = value7;
+                                StorageLocation.Text = value8;
+                            }
+                        }
+                        connection.Close();
+                    }
+                }
+            }
+        }
+
+        protected void Unnamed1_Click(object sender, EventArgs e)
+        {
+            if (TextBox1.Text != null)
+            {
+                CurrentBid.Text = TextBox1.Text;
+            }
         }
     }
 }

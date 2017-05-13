@@ -137,7 +137,7 @@
                      </td> 
                     <td class="auto-style2">
                        <a class="auto-style5"> 
-                           <asp:Button runat="server" Text="Make Bid"/>
+                           <asp:Button runat="server" Text="Make Bid" OnClick="Unnamed1_Click"/>
                        </a>
                     </td>               
                 </tr>               

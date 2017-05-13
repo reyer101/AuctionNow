@@ -17,12 +17,12 @@
                 <br />
                 <p>&nbsp;</p>
             <select id="selectItem" name="itemList" runat="server" size="5" style ="position:absolute; left: 149px; top: 82px; width: 267px; height: 303px;">                
-                <option>Item1</option>
+                <%--<option>Item1</option>
                 <option>Item2</option>
                 <option>Item3</option>
                 <option>Item4</option>
                 <option>Item5</option>
-                <option>Item6</option>                
+                <option>Item6</option>--%>    
             </select>
             <a style="position:absolute; left: 201px; top: 408px;">
                 <asp:Button ID="selectButton" runat="server" Text="select" Width="162px" OnClick="selectButton_Click"/>

@@ -118,6 +118,7 @@ header{
     position:absolute;
 }
 
+
     </style>
     <div class="jumbotron">
         <h1 style="position:absolute; top: 62px; left: 111px; width: 521px; height: 48px; font-family: 'harlow Solid Italic'; font-size: 54px;" id="head1">Calendar</h1>

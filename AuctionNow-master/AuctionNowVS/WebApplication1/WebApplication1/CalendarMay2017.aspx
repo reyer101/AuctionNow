@@ -150,10 +150,16 @@ header{
 					<div class="date">30</div>					
 				</li>
 				<li class="day">
-					<div class="date">1</div>			
+                    <div class="date">1</div>
+                    <div class="event">
+						<div class="description">
+						    <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label>
+						</div>		
+					</div>
 				</li>
 				<li class="day">
-					<div class="date">2</div>			
+					<div class="date">2</div>
+                            <asp:Label ID="Label2" runat="server" Text="Label"></asp:Label>
 				</li>
 				<li class="day">
 					<div class="date">3</div>			
@@ -176,15 +182,7 @@ header{
 					<div class="date">8</div>			
 				</li>
 				<li class="day">
-					<div class="date">9</div>
-                    <div class="event">
-						<div class="description">
-							Something
-						</div>
-						<div class="time">
-							6:00pm
-						</div>					
-					</div>				
+					<div class="date">9</div>			
 				</li>
 				<li class="day">
 					<div class="date">10</div>			
