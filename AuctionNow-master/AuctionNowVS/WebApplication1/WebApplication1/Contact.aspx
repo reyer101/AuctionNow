@@ -13,33 +13,25 @@
         <div style="background-color:lightgray; width:700px" class="col-md-4">
             <h2>Address:</h2>
             <p>
-                00000 something street</p>
+                100 Auction Way</p>
             <p>
-                city, state , zip</p>
+                Orange, CA 92866</p>
+            <h2>Phone:</h2>
+            <p>
+                (949) 660-6886</p>
+            <p>
+                &nbsp;</p>
+            <h2>Email:</h2>
+            <p>
+                <a href="mailto:questions@auctionnow.com">questions@auctionnow.com</a></p>
+            <p>
+                &nbsp;<a href="mailto:brandon@gmail.com">brandon@gmail.com</a> for personal questions.</p>
         </div>
     </div>
     <div class="row">
-        <div style="background-color:lightgray; width:700px" class="col-md-4">
-            <h2>Phone:</h2>
-            <p>
-                number1</p>
-            <p>
-                number2</p>
-            <p>
-                number3</p>
-        </div>
 
      </div>
      <div class="row">
-        <div style="background-color:lightgray; width:700px" class="col-md-4">
-            <h2>Email:</h2>
-            <p>
-                main email</p>
-            <p>
-                service email</p>
-            <p>
-                extra emails:</p>
-        </div>
 
      </div>          
 </asp:Content>

@@ -8,7 +8,7 @@
     </div>
     <div class="row">
         <div style="background-color:lightgray; width:551px; left: 8px; top: 1px;" class="col-md-4">
-            <h2>//Display A List of Auctions</h2>
+            <h2>&nbsp;List of Auctions</h2>
                 <br />
                 <p>&nbsp;</p>
             <h2>&nbsp;</h2>
@@ -16,7 +16,7 @@
                 <p>&nbsp;</p>
                 <br />
                 <p>&nbsp;</p>
-            <select id="selectAuction" name="auctionList" runat="server" size="5" style ="position:absolute; left: 137px; top: 82px; width: 283px; height: 87px;">
+            <select id="selectAuction" name="auctionList" runat="server" size="5" style ="position:absolute; left: 143px; top: 90px; width: 283px; height: 87px;">
                 <%--
                 <option>Auction1</option>
                 <option>Auction2</option>
@@ -26,7 +26,7 @@
                 <option>Auction6</option>
                 --%>
             </select>
-            <a style="position:absolute; left: 198px; top: 191px;">
+            <a style="position:absolute; left: 204px; top: 191px;">
                 <asp:Button ID="selectButton" runat="server" Text="select" Width="162px" OnClick="selectButton_Click"/>
             </a>            
         </div>        

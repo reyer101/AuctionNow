@@ -10,7 +10,7 @@
 
     <div class="row">
         <div style="background-color:lightgray; width:644px" class="col-md-4">
-            <h2>What we do...</h2>
+            <h2 class="text-left">What we do...</h2>
             <p>
                 &nbsp;</p>
             <p>

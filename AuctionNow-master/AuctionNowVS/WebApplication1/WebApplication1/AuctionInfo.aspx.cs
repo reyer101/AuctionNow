@@ -13,11 +13,13 @@ namespace WebApplication1
 {
     public partial class AuctionInfo : System.Web.UI.Page
     {
-
+        //connects to database to display the specs of an auction and pull from the database based on the...
+        //auction registration form
         protected void Page_Load(object sender, EventArgs e)
         {
             if (!IsPostBack)
             {
+                //connection
                 string ConnectString = "Server=tcp:auction-now.database.windows.net,1433;Initial Catalog=AuctionNow;Persist Security Info=False;User ID=Shayne@auction-now.database.windows.net;Password= auctionteam$4;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;";
                 string QueryString = "SELECT AuctionName, ItemName, Quantity, StartingPrice, SellingPrice, Condition, Comments, Size, StorageLocation FROM InventorySheet WHERE AuctionName = 'AuctionOne';";
 
@@ -26,7 +28,7 @@ namespace WebApplication1
                     using (var command = connection.CreateCommand())
                     {
                         command.CommandText = QueryString;
-
+                        //getting the details form the auction registration form 
                         connection.Open();
                         using (var reader = command.ExecuteReader())
                         {
@@ -67,7 +69,7 @@ namespace WebApplication1
                 }
             }
         }
-
+        //imputs the data into the proper fields
         protected void Unnamed1_Click(object sender, EventArgs e)
         {
             if (TextBox1.Text != null)

@@ -11,13 +11,14 @@
         <div style="background-color:lightgray; width:700px" class="col-md-4">
             <h2>Non Profit Registration</h2>
             <p>
-                //description of bidder registration</p>
+                Click Non Profit Registration to be directed to the main 
+                Non Profit Registraion page</p>
                 <br />
                 <p><a runat="server" href="~/NonProfitRegistration" class="btn btn-primary btn-lg" style="font-size: medium">Non Profit Registration &raquo;</a></p>
             <br />
             <h2>Bidder Registration</h2>
             <p>
-                //description of non profit registration</p>
+                Click Non Profit Registration to be directed to the main Bidder Registraion page</p>
                 <br />
                 <p><a runat="server" href="~/BidderRegistration" class="btn btn-primary btn-lg" style="font-size: larger">Bidder Registration &raquo;</a></p>
                 <br />           

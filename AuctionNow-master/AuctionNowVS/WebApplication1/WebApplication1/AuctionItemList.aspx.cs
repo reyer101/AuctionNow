@@ -13,6 +13,7 @@ namespace WebApplication1
 {
     public partial class AuctionItemList : System.Web.UI.Page
     {
+        //establishing a new SQL connection
         SqlCommand cmd = new SqlCommand();
         SqlConnection connection = new SqlConnection();
 
@@ -21,6 +22,7 @@ namespace WebApplication1
 
                 if (!IsPostBack)
                 {
+                    //connection
                     string ConnectString = "Server=tcp:auction-now.database.windows.net,1433;Initial Catalog=AuctionNow;Persist Security Info=False;User ID=Shayne@auction-now.database.windows.net;Password= auctionteam$4;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;";
                     string QueryString = "SELECT ItemName FROM InventorySheet WHERE AuctionName = 'AuctionOne';";
 
@@ -38,6 +40,7 @@ namespace WebApplication1
 
             protected void selectButton_Click(object sender, EventArgs e)
             {
+                //redirects the user to the auction info page
                 Response.Redirect("AuctionInfo.aspx");
 
             }

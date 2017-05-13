@@ -12,11 +12,13 @@ namespace WebApplication1
 {
     public partial class BidderRegistration : System.Web.UI.Page
     {
+        //establishing a SQL connection
         SqlCommand cmd = new SqlCommand();
         SqlConnection connection = new SqlConnection();
 
         protected void Page_Load(object sender, EventArgs e)
         {
+            //connection 
             connection.ConnectionString = "Server=tcp:auction-now.database.windows.net,1433;Initial Catalog=AuctionNow;Persist Security Info=False;User ID=Shayne@auction-now.database.windows.net;Password= auctionteam$4;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;";
             connection.Open();
 
@@ -24,6 +26,7 @@ namespace WebApplication1
 
         protected void Button2_Click(object sender, EventArgs e)
         {
+            //taking the input and inserting it into the database
             SqlCommand cmd = new SqlCommand("insert into BidderRegistration" + "(FirstName,LastName,Email,Phone,Address,Username,Password,CreditCardNum,CVC,ExpirationDate)values(@FirstName,@LastName,@Email,@Phone,@Address,@Username,@Password,@CreditCardNum,@CVC,@ExpirationDate)", connection);
             cmd.Parameters.AddWithValue("@FirstName", TextBox1.Text);
             cmd.Parameters.AddWithValue("@LastName", TextBox7.Text);
@@ -36,6 +39,7 @@ namespace WebApplication1
             cmd.Parameters.AddWithValue("@CVC", TextBox9.Text);
             cmd.Parameters.AddWithValue("@ExpirationDate", TextBox10.Text);
             cmd.ExecuteNonQuery();
+            //exception handle to see if the user has proper input into the fields
             if (String.IsNullOrEmpty(TextBox1.Text) || String.IsNullOrEmpty(TextBox7.Text) || String.IsNullOrEmpty(TextBox2.Text) || String.IsNullOrEmpty(TextBox3.Text) || String.IsNullOrEmpty(TextBox4.Text) || String.IsNullOrEmpty(TextBox5.Text) || String.IsNullOrEmpty(TextBox8.Text) || String.IsNullOrEmpty(TextBox9.Text) || String.IsNullOrEmpty(TextBox10.Text) || String.IsNullOrEmpty(TextBoxPassword.Text))
             {
 
