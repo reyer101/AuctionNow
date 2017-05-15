@@ -11,7 +11,9 @@
             <h2>&nbsp;List of Auctions</h2>
                 <br />
                 <p>&nbsp;</p>
-            <h2>&nbsp;</h2>
+            <h2>
+                <a style="position:absolute"><asp:Button ID="Button1" runat="server" Height="30px" Text="Add Auction" Width="90px" OnClick="Button1_Click" /></a>
+            </h2>
                 <br />
                 <p>&nbsp;</p>
                 <br />

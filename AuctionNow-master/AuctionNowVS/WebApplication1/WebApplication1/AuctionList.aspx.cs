@@ -49,5 +49,10 @@ namespace WebApplication1
             Response.Redirect("AuctionItemList.aspx");
            
         }
+
+        protected void Button1_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("AuctionRegistrationForm.aspx");
+        }
     }
 }

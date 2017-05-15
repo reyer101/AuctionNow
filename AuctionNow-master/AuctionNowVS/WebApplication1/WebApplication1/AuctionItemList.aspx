@@ -12,10 +12,12 @@
                 <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label>
                 <br />
                 <p>&nbsp;</p>
-            <h2>&nbsp;</h2>
+            <h2>
+                &nbsp;</h2>
                 <br />
                 <p>&nbsp;</p>
                 <br />
+                <a style="position:absolute; top: 269px; left: 442px; height: 23px;"><asp:Button ID="Button1" runat="server" Text="Add Item" OnClick="Button1_Click" /></a>
                 <p>&nbsp;</p>
             <select id="selectItem" name="itemList" runat="server" size="5" style ="position:absolute; left: 149px; top: 213px; width: 267px; height: 132px;">                
                 <%--<option>Item1</option>
