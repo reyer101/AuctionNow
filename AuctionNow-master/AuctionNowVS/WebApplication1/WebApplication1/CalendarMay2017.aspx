@@ -1,7 +1,6 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="CalendarMay2017.aspx.cs" Inherits="WebApplication1.CalendarMay2017" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
     <style>
-
         body
 {
 	font-family:Tahoma;
@@ -117,7 +116,6 @@ header{
 #PreviousMonth{
     position:absolute;
 }
-
     </style>
     <div class="jumbotron">
         <h1 style="position:absolute; top: 62px; left: 111px; width: 521px; height: 48px; font-family: 'harlow Solid Italic'; font-size: 54px;" id="head1">Calendar</h1>
@@ -151,12 +149,8 @@ header{
 				</li>
 				<li class="day">
                     <div class="date">1</div>
-                    <div class="event">
-						<div class="description">
 						    <asp:Label ID="Label1" runat="server" Text=""></asp:Label>
                             <a href="AuctionItemList.aspx"><asp:Label ID="Label3" runat="server" Text="AuctionOne"></asp:Label></a>
-						</div>		
-					</div>
 				</li>
 				<li class="day">
 					<div class="date">2</div>

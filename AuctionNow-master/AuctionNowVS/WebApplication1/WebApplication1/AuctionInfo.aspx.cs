@@ -26,7 +26,7 @@ namespace WebApplication1
                 //The Item Information
                 string theItem;
                 theItem = Session["selectedItem"].ToString();
-                Label1.Text = "Showing Item Information for " + theItem+". From the Auction: "+theAuction;
+                Label1.Text = "Showing Item Information for " + theItem + ". From the Auction: " + theAuction;
 
                 //connection
                 string ConnectString = "Server=tcp:auction-now.database.windows.net,1433;Initial Catalog=AuctionNow;Persist Security Info=False;User ID=Shayne@auction-now.database.windows.net;Password= auctionteam$4;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;";
@@ -90,12 +90,12 @@ namespace WebApplication1
 
                 message("Please Make a Bid");
 
-            }            
+            }
             if (TextBox1.Text == "0")
             {
                 message("You cannot bid 0");
             }
-            if(Convert.ToDouble(TextBox1.Text)<Convert.ToDouble(CurrentBid.Text))
+            if (Convert.ToDouble(TextBox1.Text) < Convert.ToDouble(CurrentBid.Text))
             {
                 message("You cannot bid less than the current bid");
             }
@@ -109,9 +109,9 @@ namespace WebApplication1
                 CurrentBid.Text = TextBox1.Text;
 
             }
-
-
         }
+
+
         public void message(String msg)
         {
 

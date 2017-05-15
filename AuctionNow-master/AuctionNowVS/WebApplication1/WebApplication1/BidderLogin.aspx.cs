@@ -34,7 +34,7 @@ namespace WebApplication1
             insert.Parameters.AddWithValue("@Password", TextBoxPassword.Text);
             insert.ExecuteNonQuery();
             //exception handle if fields are empty
-            if (String.IsNullOrEmpty(TextBox5.Text) ||String.IsNullOrEmpty(TextBoxPassword.Text))
+            if (String.IsNullOrEmpty(TextBox5.Text) || String.IsNullOrEmpty(TextBoxPassword.Text))
             {
 
                 message("Login Failed, please check for missing fields");
@@ -43,6 +43,7 @@ namespace WebApplication1
             else
             {
                 message("Login successful");
+                Response.Redirect("Default.aspx");
             }
 
         }
