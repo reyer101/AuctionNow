@@ -43,6 +43,7 @@ namespace WebApplication1
             else
             {
                 message("Login successful");
+                Response.Redirect("Default.aspx");
             }
 
         }

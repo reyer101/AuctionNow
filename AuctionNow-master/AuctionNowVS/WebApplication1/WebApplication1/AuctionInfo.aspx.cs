@@ -81,8 +81,7 @@ namespace WebApplication1
 
                 message("Please Make a Bid");
 
-            }  
-           
+            }          
 
 
         }
