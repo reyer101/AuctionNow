@@ -9,6 +9,7 @@
     <div class="row">
         <div style="background-color:lightgray; width:551px; left: 8px; top: 1px; height: 429px;" class="col-md-4">
             <h2>&nbsp; List of Auction items</h2>
+                <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label>
                 <br />
                 <p>&nbsp;</p>
             <h2>&nbsp;</h2>

@@ -36,7 +36,9 @@
         <div style="background-color:lightgray; " class="auto-style4">
            <h2>Item Information Sheet
             </h2>
-            <p>Item Information</p>
+            <p>
+                <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label>
+            </p>
             <table style="width: 100%">
                 <tr>
                     <td style="width: 167px">

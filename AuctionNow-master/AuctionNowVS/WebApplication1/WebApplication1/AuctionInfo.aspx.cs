@@ -19,9 +19,18 @@ namespace WebApplication1
         {
             if (!IsPostBack)
             {
+                //The auction Information
+                string theAuction;
+                theAuction = Session["selectedAuction"].ToString();
+
+                //The Item Information
+                string theItem;
+                theItem = Session["selectedItem"].ToString();
+                Label1.Text = "Showing Item Information for " + theItem+". From the Auction: "+theAuction;
+
                 //connection
                 string ConnectString = "Server=tcp:auction-now.database.windows.net,1433;Initial Catalog=AuctionNow;Persist Security Info=False;User ID=Shayne@auction-now.database.windows.net;Password= auctionteam$4;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;";
-                string QueryString = "SELECT AuctionName, ItemName, Quantity, StartingPrice, SellingPrice, Condition, Comments, Size, StorageLocation FROM InventorySheet WHERE AuctionName = 'AuctionOne';";
+                string QueryString = "SELECT AuctionName, ItemName, Quantity, StartingPrice, SellingPrice, Condition, Comments, Size, StorageLocation FROM InventorySheet WHERE ItemName = " + "'" + theItem + "'" + " AND AuctionName = " + "'" + theAuction + "'" + ";";
 
                 using (var connection = new SqlConnection(ConnectString))
                 {
@@ -97,6 +106,8 @@ namespace WebApplication1
             if (Convert.ToDouble(TextBox1.Text) > Convert.ToDouble(CurrentBid.Text) && TextBox1.Text != "")
             {
                 message("Bid successful");
+                CurrentBid.Text = TextBox1.Text;
+
             }
 
 
