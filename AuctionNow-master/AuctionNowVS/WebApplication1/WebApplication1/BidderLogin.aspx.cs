@@ -33,19 +33,20 @@ namespace WebApplication1
             insert.Parameters.AddWithValue("@Username", TextBox5.Text);
             insert.Parameters.AddWithValue("@Password", TextBoxPassword.Text);
             insert.ExecuteNonQuery();
+            select.ExecuteNonQuery();
             //check credentials in databse
             //exception handle if fields are empty
-            if (String.IsNullOrEmpty(TextBox5.Text) || String.IsNullOrEmpty(TextBoxPassword.Text))
+
+            if (String.IsNullOrEmpty(TextBoxPassword.Text) || String.IsNullOrEmpty(TextBoxPassword.Text))
             {
-
-                message("Login Failed, please check for missing fields");
-
+                message("Login Failed");
             }
             else
             {
                 string currentSession = TextBox5.Text;
                 Session["LoggedIn"] = currentSession;
-                message("Welcome "+Session["LoggedIn"]+"!");
+                //message("Welcome " + Session["LoggedIn"] + "!");
+                message("Welcome " + Session["LoggedIn"]);
             }
         }
         public void message(String msg)

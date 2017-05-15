@@ -110,7 +110,15 @@
                         <li><a runat="server" href="~/Auctions">Auctions</a>                         
                         
                             <ul>
-                                <li><a runat="server" href="~/AuctionList">Auction List</a></li>                                                               
+                                <li><a runat="server" href="~/AuctionList">Auction List</a></li>                                                        
+                                
+
+                            </ul>
+                        </li>
+                        <li><a runat="server" href="~/InventorySheet">Items</a>                         
+                        
+                            <ul>
+                                                                                               
                                 <li><a href="~/InventorySheet" runat="server">Inventory Sheet</a></li>
                                 <li><a href="~/InventorySheetViewOnly" runat="server">Inventory Sheet View Only</a></li>
 

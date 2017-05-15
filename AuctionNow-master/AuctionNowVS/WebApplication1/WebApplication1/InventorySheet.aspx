@@ -21,7 +21,7 @@
             min-height: 1px;
             top: 39px;
             left: 8px;
-            height: 761px;
+            height: 1073px;
             float: left;
             width: 560px;
             padding-left: 15px;
@@ -167,7 +167,11 @@
                 
              </table>  
                 
-        </div>
+            <asp:ListBox ID="ListBox1" runat="server" Height="188px" Width="143px"></asp:ListBox>
+                
+            <a style="position:absolute; top: 740px; left: 167px;"><asp:Label ID="Label1" runat="server" Text="Existing Auctions"></asp:Label></a>
+                
+            </div>
     </div>   
   
 </asp:Content>

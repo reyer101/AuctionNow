@@ -49,18 +49,17 @@ namespace WebApplication1
             {
                 message("Unforuntately, we cannot schedule any more auctions at this time, please come back and try again soon!");
             }
-            else if (DateTime.TryParse(tb_auctDate.Text, out dt) && dt.Date > DateTime.Today.AddDays(7f))
+            else if (DateTime.TryParse(tb_auctDate.Text, out dt) && dt.Date < DateTime.Today.AddDays(7f))
             {
                 message("Unfortunately, we cannot take an auction within a 7 day period of this date! Please try a later date!");
-            }
-            //check if there are more than 5 dates around the current period
-            else if(DateTime.TryParse(tb_auctDate.Text, out dt) && AuctionWithin() >= 5)
-            {
-                message("Unforuntately, we cannot take more than 5 auctions per 7 days, please try a sooner or later date");
             }
             //otherwise  run the command
             else
             {
+                if (Auction.Text.Contains("'"))
+                {
+                    Auction.Text = Auction.Text.Replace("'", "");
+                }
                 SqlCommand cmd = new SqlCommand("insert into AuctionRegistration" + "(AuctionName, OrganizationName, AuctionDate, AuctionTime, NumOfItems, AdditionalComments)values(@AuctionName, @OrganizationName, @AuctionDate, @AuctionTime, @NumOfItems, @AdditionalComments)", connection);
                 cmd.Parameters.AddWithValue("@AuctionName", Auction.Text);
                 cmd.Parameters.AddWithValue("@OrganizationName", Organization.Text);

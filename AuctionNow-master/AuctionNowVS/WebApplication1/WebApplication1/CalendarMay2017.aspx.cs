@@ -51,7 +51,7 @@ namespace WebApplication1
                 //Table end.
                 html.Append("</table>");
 
-                Label20.Controls.Add(new Literal { Text = html.ToString() });
+                Label24.Controls.Add(new Literal { Text = html.ToString() });
 
 
 

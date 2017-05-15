@@ -26,6 +26,10 @@ namespace WebApplication1
 
         protected void Button2_Click(object sender, EventArgs e)
         {
+            if (TextBox10.Text.Contains("/"))
+            {
+                TextBox10.Text = TextBox10.Text.Replace("/", "");
+            }
             //taking the input and inserting it into the database
             SqlCommand cmd = new SqlCommand("insert into BidderRegistration" + "(FirstName,LastName,Email,Phone,Address,Username,Password,CreditCardNum,CVC,ExpirationDate)values(@FirstName,@LastName,@Email,@Phone,@Address,@Username,@Password,@CreditCardNum,@CVC,@ExpirationDate)", connection);
             cmd.Parameters.AddWithValue("@FirstName", TextBox1.Text);

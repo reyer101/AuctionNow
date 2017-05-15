@@ -247,7 +247,7 @@ header{
 			</ul>
 			<ul class="days">
 				<li class="day">
-					<div class="date">21</div>			
+					<div class="date">21</div>		
 				</li>
 				<li class="day">
 					<div class="date">22</div>			
@@ -256,7 +256,9 @@ header{
 					<div class="date">23</div>			
 				</li>
 				<li class="day">
-					<div class="date">24</div>			
+					<div class="date">24</div>		
+                                    <a href="AuctionList.aspx"><asp:Label ID="Label24" runat="server"></asp:Label></a>
+
 				</li>
 				<li class="day">
 					<div class="date">25</div>			

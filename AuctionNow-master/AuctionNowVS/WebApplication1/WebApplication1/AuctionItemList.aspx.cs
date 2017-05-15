@@ -24,6 +24,7 @@ namespace WebApplication1
                 //retrieve the session for the auction 
                 string theAuction;
                 theAuction = Session["selectedAuction"].ToString();
+                
                 Label1.Text = "Showing Auction Items for the Auction: " + theAuction;
 
                 //set up connection
@@ -52,7 +53,10 @@ namespace WebApplication1
             Response.Redirect("AuctionInfo.aspx");
                 
         }
-
+        protected void Button1_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("InventorySheet.aspx");
+        }
 
 
     }
