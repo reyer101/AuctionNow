@@ -17,6 +17,7 @@ namespace WebApplication1
 
         protected void Page_Load(object sender, EventArgs e)
         {
+            DateTime thisDay = DateTime.Today;
 
             //loads all data into a table printed out by HTML
             if (!this.IsPostBack)
@@ -37,42 +38,48 @@ namespace WebApplication1
                         
                     foreach (DataColumn column in dt.Columns)
                     {
-                        html.Append("<div class='event'>");
-                        html.Append("<div class='description'>");
-                        html.Append(row[column.ColumnName]);
-                        html.Append("</div>");
-                        html.Append("</div>");
+                        //DateTime dateTime;
+                            html.Append("<div class='event'>");
+                            html.Append("<div class='description'>");
+                            html.Append(row[column]);
+                            html.Append("</div>");
+                            html.Append("</div>");
+                      
                     }
                 }
 
                 //Table end.
                 html.Append("</table>");
 
-                //Append the HTML string to Placeholder.
-                    Label3.Controls.Add(new Literal { Text = html.ToString() });
+                Label20.Controls.Add(new Literal { Text = html.ToString() });
+
+
+
 
             }
         }
 
-        //function to connect to database and retrieve AuctionName info 
+        //function to connect to database and retrieve AuctionDate info 
         private DataTable GetData()
         {
+            DateTime thisDay = DateTime.Today;
             connection.ConnectionString = "Server=tcp:auction-now.database.windows.net,1433;Initial Catalog=AuctionNow;Persist Security Info=False;User ID=Shayne@auction-now.database.windows.net;Password= auctionteam$4;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;";
             connection.Open();
 
-            using (SqlCommand cmd = new SqlCommand("SELECT AuctionName,AuctionTime FROM AuctionRegistration WHERE AuctionDate = '5/1/17';"))
+            using (SqlCommand cmd = new SqlCommand("SELECT AuctionName, AuctionTime, AuctionDate FROM AuctionRegistration WHERE AuctionDate BETWEEN " + "'" + thisDay.ToString("d") + "'" + "AND" + "'" + thisDay.AddDays(30f).ToString("d") + "'" + ";"))
+            {
+                using (SqlDataAdapter sda = new SqlDataAdapter())
                 {
-                    using (SqlDataAdapter sda = new SqlDataAdapter())
+                    cmd.Connection = connection;
+                    sda.SelectCommand = cmd;
+                    using (DataTable dt = new DataTable())
                     {
-                        cmd.Connection = connection;
-                        sda.SelectCommand = cmd;
-                        using (DataTable dt = new DataTable())
-                        {
-                        ; sda.Fill(dt);
-                            return dt;
-                        }
+                        sda.Fill(dt);
+                        return dt;
                     }
                 }
             }
-        }
+            }
+
+    }
    }

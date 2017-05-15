@@ -28,11 +28,12 @@ namespace WebApplication1
         protected void Button1_Click(object sender, EventArgs e)
         {
             //select the data from bidder registration and insert it into the login table
-            SqlCommand select = new SqlCommand("SELECT * FROM BidderRegistration WHERE Username=" + TextBox5.Text + "'and Password=" + TextBoxPassword.Text + "'", connection);
+            SqlCommand select = new SqlCommand("SELECT * FROM BidderRegistration WHERE Username=" + "'"+TextBox5.Text+"'" + "and Password=" + "'"+TextBoxPassword.Text+"'" + ";", connection);
             SqlCommand insert = new SqlCommand("insert into LoginTable" + "(Username,Password)values(@Username,@Password)", connection);
             insert.Parameters.AddWithValue("@Username", TextBox5.Text);
             insert.Parameters.AddWithValue("@Password", TextBoxPassword.Text);
             insert.ExecuteNonQuery();
+            //check credentials in databse
             //exception handle if fields are empty
             if (String.IsNullOrEmpty(TextBox5.Text) || String.IsNullOrEmpty(TextBoxPassword.Text))
             {
@@ -42,11 +43,10 @@ namespace WebApplication1
             }
             else
             {
-                
-                Response.Redirect("Default.aspx");
-                message("Login successful");
+                string currentSession = TextBox5.Text;
+                Session["LoggedIn"] = currentSession;
+                message("Welcome "+Session["LoggedIn"]+"!");
             }
-
         }
         public void message(String msg)
         {

@@ -81,33 +81,36 @@ namespace WebApplication1
         //imputs the data into the proper fields
         protected void Unnamed1_Click(object sender, EventArgs e)
         {
-            if (TextBox1.Text != null)
-            {
-                CurrentBid.Text = TextBox1.Text;
-            }
-            if (String.IsNullOrEmpty(TextBox1.Text))
-            {
 
-                message("Please Make a Bid");
+            if (!string.IsNullOrEmpty(Session["LoggedIn"] as string))
+            {
+                message("You are not logged in! You must be logged in to place a Bid!");
+            }
+            else
+            {
+                if (String.IsNullOrEmpty(TextBox1.Text))
+                {
+                    message("Please Make a Bid");
 
-            }
-            if (TextBox1.Text == "0")
-            {
-                message("You cannot bid 0");
-            }
-            if (Convert.ToDouble(TextBox1.Text) < Convert.ToDouble(CurrentBid.Text))
-            {
-                message("You cannot bid less than the current bid");
-            }
-            if (Convert.ToDouble(TextBox1.Text) <= Convert.ToDouble(CurrentBid.Text))
-            {
-                message("You cannot bid the same amount the current bid");
-            }
-            if (Convert.ToDouble(TextBox1.Text) > Convert.ToDouble(CurrentBid.Text) && TextBox1.Text != "")
-            {
-                message("Bid successful");
-                CurrentBid.Text = TextBox1.Text;
+                }
+                if (TextBox1.Text == "0")
+                {
+                    message("You cannot bid 0");
+                }
+                if (Convert.ToDouble(TextBox1.Text) < Convert.ToDouble(CurrentBid.Text))
+                {
+                    message("You cannot bid less than the current bid");
+                }
+                if (Convert.ToDouble(TextBox1.Text) == Convert.ToDouble(CurrentBid.Text))
+                {
+                    message("You cannot bid the same amount the current bid");
+                }
+                if (Convert.ToDouble(TextBox1.Text) > Convert.ToDouble(CurrentBid.Text) && TextBox1.Text != "")
+                {
+                    message("Bid successful");
+                    CurrentBid.Text = TextBox1.Text;
 
+                }
             }
         }
 

@@ -72,9 +72,9 @@ header{
 	display:block;
 	font-size:13px;
 	border-radius:4px;
-	padding:5px;
-	margin-top:40px;
-	margin-bottom:5px;
+	padding:0px;
+	margin-top:0px;
+	margin-bottom:0px;
 	color:#666;
 	line-height:14px;
 	background:#c4f2f2;
@@ -148,74 +148,101 @@ header{
 					<div class="date">30</div>					
 				</li>
 				<li class="day">
-                    <div class="date">1</div>
-						    <asp:Label ID="Label1" runat="server" Text=""></asp:Label>
-                            <a href="AuctionItemList.aspx"><asp:Label ID="Label3" runat="server" Text="AuctionOne"></asp:Label></a>
+                    <div id="first" runat="server" class="date">1</div>
+                            <a href="AuctionList.aspx"><asp:Label ID="Label1" runat="server" ></asp:Label></a>
 				</li>
 				<li class="day">
 					<div class="date">2</div>
-                            <asp:Label ID="Label2" runat="server" Text=""></asp:Label>
+                             <a href="AuctionList.aspx"><asp:Label ID="Label2" runat="server" ></asp:Label></a>
 				</li>
 				<li class="day">
-					<div class="date">3</div>			
+					<div class="date">3</div>		
+
 				</li>
 				<li class="day">
-					<div class="date">4</div>			
+					<div class="date">4</div>	
+
 				</li>
 				<li class="day">
-					<div class="date">5</div>			
+					<div class="date">5</div>	
+
 				</li>
 				<li class="day">
 					<div class="date">6</div>			
-				</li>		
-			    <li>
-                    
-                </li>
+
+				</li>	
 			</ul>
 			<ul class="days">
 				<li class="day">
-					<div class="date">7</div>			
+					<div class="date">7</div>	 <a href="AuctionList.aspx"><asp:Label ID="Label7" runat="server"></asp:Label></a>
+
 				</li>
 				<li class="day">
-					<div class="date">8</div>			
+					<div class="date">8</div>
+                                                <a href="AuctionList.aspx"><asp:Label ID="Label8" runat="server"></asp:Label></a>
+
 				</li>
 				<li class="day">
-					<div class="date">9</div>			
+					<div class="date">9</div>
+                                                <a href="AuctionList.aspx"><asp:Label ID="Label9" runat="server"></asp:Label></a>
+
 				</li>
 				<li class="day">
-					<div class="date">10</div>			
+					<div class="date">10</div>
+                                                <a href="AuctionList.aspx"><asp:Label ID="Label10" runat="server"></asp:Label></a>
+
 				</li>
 				<li class="day">
-					<div class="date">11</div>			
+					<div class="date">11</div>
+                                                <a href="AuctionList.aspx"><asp:Label ID="Label11" runat="server"></asp:Label></a>
+
 				</li>
 				<li class="day">
-					<div class="date">12</div>			
+					<div class="date">12</div>
+                                                <a href="AuctionList.aspx"><asp:Label ID="Label12" runat="server"></asp:Label></a>
+
 				</li>
 				<li class="day">
 					<div class="date">13</div>			
+                                                <a href="AuctionList.aspx"><asp:Label ID="Label13" runat="server"></asp:Label></a>
+
 				</li>
 			</ul>
 			<ul class="days">
 				<li class="day">
 					<div class="date">14</div>			
+                                                <a href="AuctionList.aspx"><asp:Label ID="Label14" runat="server"></asp:Label></a>
+
 				</li>
 				<li class="day">
-					<div class="date">15</div>                    		
+					<div class="date">15</div>
+                                                 <a href="AuctionList.aspx"><asp:Label ID="Label15" runat="server"></asp:Label></a>
+
 				</li>
 				<li class="day">
-					<div class="date">16</div>			
+					<div class="date">16</div>
+                                                <a href="AuctionList.aspx"><asp:Label ID="Label16" runat="server"></asp:Label></a>
+
 				</li>
 				<li class="day">
-					<div class="date">17</div>			
+					<div class="date">17</div>
+                                                <a href="AuctionList.aspx"><asp:Label ID="Label17" runat="server"></asp:Label></a>
+
 				</li>
 				<li class="day">
-					<div class="date">18</div>			
+					<div class="date">18</div>
+                                                <a href="AuctionList.aspx"><asp:Label ID="Label18" runat="server"></asp:Label></a>
+
 				</li>
 				<li class="day">
-					<div class="date">19</div>			
+					<div class="date">19</div>
+                                                <a href="AuctionList.aspx"><asp:Label ID="Label19" runat="server"></asp:Label></a>
+
 				</li>
 				<li class="day">
-					<div class="date">20</div>			
+					<div class="date">20</div>
+                                                <a href="AuctionList.aspx"><asp:Label ID="Label20" runat="server"></asp:Label></a>
+
 				</li>
 			</ul>
 			<ul class="days">
