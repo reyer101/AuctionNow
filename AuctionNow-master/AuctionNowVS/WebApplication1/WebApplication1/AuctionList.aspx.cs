@@ -47,6 +47,7 @@ namespace WebApplication1
             string selectedAuction = selectAuction.Items[selectAuction.SelectedIndex].Value;
             Session["selectedAuction"] = selectedAuction;
             Response.Redirect("AuctionItemList.aspx");
+           
         }
     }
 }

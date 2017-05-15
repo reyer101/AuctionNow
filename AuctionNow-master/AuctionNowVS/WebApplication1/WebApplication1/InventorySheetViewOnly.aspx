@@ -4,7 +4,7 @@
         <h1 style="position:absolute; top: 62px; left: 111px; width: 369px; height: 48px; font-family: 'harlow Solid Italic'; font-size: 54px;" id="head1">Inventory Sheet</h1>
         <br />
         
-        <p style="position:absolute; top: 137px; left: 108px; width: 864px;"; class="lead">//inventory sheet description</p>        
+        <p style="position:absolute; top: 137px; left: 108px; width: 864px;"; class="lead">AucionNow's inventory sheet view</p>        
     </div>
         <asp:PlaceHolder ID = "PlaceHolder1" runat="server" />
 
