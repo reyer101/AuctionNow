@@ -153,13 +153,14 @@ header{
                     <div class="date">1</div>
                     <div class="event">
 						<div class="description">
-						    <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label>
+						    <asp:Label ID="Label1" runat="server" Text=""></asp:Label>
+                            <a href="AuctionItemList.aspx"><asp:Label ID="Label3" runat="server" Text="AuctionOne"></asp:Label></a>
 						</div>		
 					</div>
 				</li>
 				<li class="day">
 					<div class="date">2</div>
-                            <asp:Label ID="Label2" runat="server" Text="Label"></asp:Label>
+                            <asp:Label ID="Label2" runat="server" Text=""></asp:Label>
 				</li>
 				<li class="day">
 					<div class="date">3</div>			
@@ -173,6 +174,9 @@ header{
 				<li class="day">
 					<div class="date">6</div>			
 				</li>		
+			    <li>
+                    
+                </li>
 			</ul>
 			<ul class="days">
 				<li class="day">
