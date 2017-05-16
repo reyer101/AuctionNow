@@ -47,11 +47,21 @@ namespace WebApplication1
             string selectedAuction = selectAuction.Items[selectAuction.SelectedIndex].Value;
             Session["selectedAuction"] = selectedAuction;
             Response.Redirect("AuctionItemList.aspx");
+            if(String.IsNullOrEmpty(Session["selectedAuction"].ToString()))
+            {
+                message("Please Pick a valid Auction from the list!");
+            }
            
         }
         protected void Button1_Click(object sender, EventArgs e)
         {
             Response.Redirect("AuctionRegistrationForm.aspx");
+        }
+
+        public void message(String msg)
+        {
+
+            Page.ClientScript.RegisterStartupScript(Page.GetType(), "Message Box", "<script language='javascript'>alert('" + msg + "')</script>");
         }
     }
 }

@@ -57,7 +57,5 @@ namespace WebApplication1
         {
             Response.Redirect("InventorySheet.aspx");
         }
-
-
     }
 }

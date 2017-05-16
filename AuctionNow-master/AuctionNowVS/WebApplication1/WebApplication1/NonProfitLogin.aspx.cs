@@ -42,9 +42,10 @@ namespace WebApplication1
             }
             else
             {
-                
-                Response.Redirect("Default.aspx");
-                message("Login successful");
+                string currentSession = TextBox5.Text;
+                Session["LoggedIn"] = currentSession;
+                //message("Welcome " + Session["LoggedIn"] + "!");
+                message("Welcome " + Session["LoggedIn"]);
             }
 
         }

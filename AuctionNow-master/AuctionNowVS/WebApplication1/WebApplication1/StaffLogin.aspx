@@ -63,7 +63,7 @@
                         <br />
                     </td>
                     <td class="auto-style2">
-                        <input id="Password1" type="password" />      
+                        <input id="Password1" type="password" runat="server"/>      
 
                      </td>   
                         
@@ -77,7 +77,7 @@
                     </td>
                     <td>      
                         <a style="position:absolute; top: 443px; left: 324px;"><asp:CheckBox ID="CheckBox1" runat="server" Text="Remember Me" ForeColor="Black" /></a>
-                        <a style="position:absolute; top: 440px; left: 201px;"><asp:Button ID="Button1" runat="server" Text="Login" Width="75px" /></a>
+                        <a style="position:absolute; top: 440px; left: 201px;"><asp:Button ID="Button1" runat="server" Text="Login" Width="75px" OnClick="Button1_Click" /></a>
                      </td>   
                         
 

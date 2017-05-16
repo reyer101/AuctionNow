@@ -26,16 +26,8 @@ namespace WebApplication1
         protected void Button234_Click(object sender, EventArgs e)
         {
             //taking user input from thefields and saving it into the datbase 
-            SqlCommand cmd = new SqlCommand("insert into NonProfitRegistration" + "(Name,Email,Phone,Address,Username,Password)values(@Name,@Email,@Phone,@Address,@Username,@Password)", connection);
-            cmd.Parameters.AddWithValue("@Name", TextBox1.Text);
-            cmd.Parameters.AddWithValue("@Email",TextBox2.Text);
-            cmd.Parameters.AddWithValue("@Phone", TextBox3.Text);
-            cmd.Parameters.AddWithValue("@Address", TextBox4.Text);
-            cmd.Parameters.AddWithValue("@Username", TextBox5.Text);
-            cmd.Parameters.AddWithValue("@Password", TextBoxPassword.Text);
-            cmd.ExecuteNonQuery();
             //handle for proper input 
-            if (String.IsNullOrEmpty(TextBox1.Text) || String.IsNullOrEmpty(TextBox2.Text) || String.IsNullOrEmpty(TextBox3.Text) || String.IsNullOrEmpty(TextBox4.Text) || String.IsNullOrEmpty(TextBox5.Text) ||String.IsNullOrEmpty(TextBoxPassword.Text))
+            if (String.IsNullOrEmpty(TextBox1.Text) || String.IsNullOrEmpty(TextBox2.Text) || String.IsNullOrEmpty(TextBox3.Text) || String.IsNullOrEmpty(TextBox4.Text) || String.IsNullOrEmpty(TextBox5.Text) || String.IsNullOrEmpty(TextBoxPassword.Text))
             {
 
                 message("Registration Failed, please check for missing fields");
@@ -43,6 +35,18 @@ namespace WebApplication1
             }
             else
             {
+                if (TextBox3.Text.Contains("-"))
+                {
+                    TextBox3.Text = TextBox3.Text.Replace("-", "");
+                }
+                SqlCommand cmd = new SqlCommand("insert into NonProfitRegistration" + "(Name,Email,Phone,Address,Username,Password)values(@Name,@Email,@Phone,@Address,@Username,@Password)", connection);
+                cmd.Parameters.AddWithValue("@Name", TextBox1.Text);
+                cmd.Parameters.AddWithValue("@Email", TextBox2.Text);
+                cmd.Parameters.AddWithValue("@Phone", TextBox3.Text);
+                cmd.Parameters.AddWithValue("@Address", TextBox4.Text);
+                cmd.Parameters.AddWithValue("@Username", TextBox5.Text);
+                cmd.Parameters.AddWithValue("@Password", TextBoxPassword.Text);
+                cmd.ExecuteNonQuery();
                 message("Registration successful");
             }
 
